@@ -1,0 +1,4 @@
+Best accuracy model saved at epoch 280
+Accuracy: 0.949640
+Balanced Accuracy: 0.873953
+Kappa: 0.936284

@@ -1,0 +1,2 @@
+overall_test_acc,balanced_acc,kappa,best_precision_Ash,best_precision_Beech,best_precision_Douglas fir,best_precision_Oak,best_precision_Pine,best_precision_Red Oak,best_precision_Spruce
+94.96402877697841,87.39528489528489,0.936284460742584,83.33333333333334,94.11764705882352,100.0,100.0,100.0,86.95652173913044,96.96969696969697
