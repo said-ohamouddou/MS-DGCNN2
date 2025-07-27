@@ -147,11 +147,15 @@ Using this structure, the script could be adapted to any other 3D point cloud cl
 <img src="media/3.png"  width="800"/>
 </div>
 
+<div align="center">
+<img src="media/4.png"  width="800"/>
+</div>
+
 
 ### ModelNet10/40 Dataset
 For general 3D point cloud classification benchmarks, MS-DGCNN++ outperforms DGCNN and MS-DGCNN, and achieves competitive results with transformer-based models.
 <div align="center">
-<img src="media/4.png"  width="800"/>
+<img src="media/5.png"  width="800"/>
 </div>
 
 ## Project Structure
