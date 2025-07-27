@@ -41,8 +41,8 @@ This implementation is tested on:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://said-ohamouddou/MS-DGCNN2.git
-cd MS-DGCNN-plus-plus
+git clone https://github.com/said-ohamouddou/MS-DGCNN2.git
+cd MS-DGCNN2
 ```
 
 ### 2. Install Dependencies
