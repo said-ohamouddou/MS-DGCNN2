@@ -1,4 +1,7 @@
-# MS-DGCNN++: A Multi-Scale Fusion Dynamic Graph Neural Network with Biological Knowledge Integration for LiDAR Tree Species Classification
+
+### MS-DGCNN++: A Multi-Scale Fusion Dynamic Graph Neural Network with Biological Knowledge Integration for LiDAR Tree Species Classification
+
+📄 **Preprint on arXiv:** [arXiv:2507.12602](https://arxiv.org/abs/2507.12602)
 
 ## Overview
 
@@ -14,6 +17,7 @@ MS-DGCNN++ is a hierarchical multiscale fusion dynamic graph convolutional netwo
 <div align="center">
 <img src="media/pg_0003_page-0001.jpg"  width="800"/>
 </div>
+
 ## Key Features
 
 - **Hierarchical Multi-Scale Processing**: Semantic feature extraction at local, branch, and canopy scales
@@ -109,7 +113,10 @@ To preprocess STPCTLS data yourself:
 1. Download the raw data from the official source: https://data.goettingen-research-online.de/dataset.xhtml?persistentId=doi:10.25625/FOHUJM
 2. Organize data files (xyz, pts, txt) of each class in separate folders named by class
 3. Place all class folders in the `data_tree` directory
-4. Run data.py to prepare h5 files
+4. To prepare h5 files run:
+  ```bash
+python data.py 
+```
 
 ```bash
 # Structure should be:
@@ -140,22 +147,25 @@ Using this structure, the script could be adapted to any other 3D point cloud cl
 <img src="media/2.png"  width="800"/>
 </div>
 
-
-### XFOR-Species20K Dataset
-
 <div align="center">
 <img src="media/3.png"  width="800"/>
 </div>
 
+### XFOR-Species20K Dataset
+
 <div align="center">
 <img src="media/4.png"  width="800"/>
+</div>
+
+<div align="center">
+<img src="media/5.png"  width="800"/>
 </div>
 
 
 ### ModelNet10/40 Dataset
 For general 3D point cloud classification benchmarks, MS-DGCNN++ outperforms DGCNN and MS-DGCNN, and achieves competitive results with transformer-based models.
 <div align="center">
-<img src="media/5.png"  width="800"/>
+<img src="media/6.png"  width="800"/>
 </div>
 
 ## Project Structure
@@ -194,7 +204,3 @@ This code is based on the excellent implementation of DGCNN: [https://github.com
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Contact
-
-For questions and issues, please open an issue on GitHub or contact the authors.
