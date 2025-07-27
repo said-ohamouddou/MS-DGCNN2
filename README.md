@@ -41,7 +41,7 @@ This implementation is tested on:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/MS-DGCNN-plus-plus.git
+git clone https://said-ohamouddou/MS-DGCNN2.git
 cd MS-DGCNN-plus-plus
 ```
 
