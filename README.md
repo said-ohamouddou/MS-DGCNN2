@@ -5,7 +5,6 @@
 | Resource | Link |
 |----------|------|
 | Preprint | [arXiv:2507.12602](https://arxiv.org/abs/2507.12602) · [PDF](https://arxiv.org/pdf/2507.12602.pdf) |
-| Model release (cited in the paper) | [github.com/said-ohamouddou/MS-DGCNN2](https://github.com/said-ohamouddou/MS-DGCNN2) |
 | Unified 3D library (large benchmarks & preprocessing) | [github.com/said-ohamouddou/LIDARLearn](https://github.com/said-ohamouddou/LIDARLearn) |
 
 ---
@@ -123,5 +122,3 @@ Please cite the arXiv preprint and the original **STPCTLS** / **HeliALS** datase
   url           = {https://arxiv.org/abs/2507.12602}
 }
 ```
-
-Replace `year`, `primaryClass`, or migrate to `@article` once the journal version exists.
