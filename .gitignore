@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+.venv/
+venv/
+.env
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+*.so
+
+# Dataset binaries — obtain via README / dataset providers and place locally
+*.h5
+.DS_Store

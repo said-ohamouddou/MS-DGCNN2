@@ -1,0 +1,14 @@
+# Install PyTorch first for your CUDA/CPU setup: https://pytorch.org
+torch>=2.0.0
+numpy>=1.22.0
+scipy>=1.9.0
+scikit-learn>=1.2.0
+tqdm>=4.64.0
+matplotlib>=3.6.0
+seaborn>=0.12.0
+pandas>=2.0.0
+h5py>=3.8.0
+timm>=0.9.0
+
+# Optional (Point-M2AE): models/pointm2ae/modules.py may need pointnet2_ops and knn_cuda.
+# Official repo: https://github.com/zrrskywalker/point-m2ae
