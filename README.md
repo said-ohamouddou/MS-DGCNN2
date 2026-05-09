@@ -109,7 +109,7 @@ Artifacts land under `results/` or `--output_dir`: configs, metrics JSON, LaTeX 
 
 ## Citation
 
-Please cite the arXiv preprint and the original **STPCTLS** / **HeliALS** dataset publications referenced in `sn-article.tex`. When you use the unified benchmarking stack, cite **[LIDARLearn](https://github.com/said-ohamouddou/LIDARLearn)** as indicated there.
+Please cite the arXiv preprint. When you use the unified benchmarking stack, cite **[LIDARLearn](https://github.com/said-ohamouddou/LIDARLearn)** as indicated there.
 
 ```bibtex
 @misc{ohamouddou2025msdgcnnpp,
