@@ -5,7 +5,8 @@ import torch.nn as nn
 import torch.nn.functional as F
 from timm.models.layers import trunc_normal_
 from dataclasses import dataclass
-from typing import List
+from typing import List, Optional
+import hashlib
 
 from .modules import Group, Token_Embed, Encoder_Block
 
@@ -125,7 +126,7 @@ class PointM2AE(nn.Module):
 
     def load_model_from_ckpt(self, ckpt_path):
         if ckpt_path is not None:
-            state_dict = torch.load(ckpt_path)
+            state_dict = torch.load(ckpt_path, map_location='cpu', weights_only=False)
             base_ckpt = state_dict['base_model']
             base_ckpt = {k.replace('module.', '', 1) if k.startswith('module.') else k: v for k, v in base_ckpt.items()}
             total_ckpt_params = sum(p.numel() for p in base_ckpt.values())
@@ -200,6 +201,7 @@ class PointM2AEConfig:
     drop_path_rate: float = 0.1
     local_radius: List[float] = None
     smooth: float = 0.2
+    pretrained_sha256: Optional[str] = None  # identifies the loaded weights
     
     def __post_init__(self):
         if self.encoder_depths is None:
@@ -230,5 +232,11 @@ def create_pointm2ae(num_classes: int, ckpt_path: str = None) -> PointM2AE:
     
     if ckpt_path is not None:
         model.load_model_from_ckpt(ckpt_path)
-    
+        digest = hashlib.sha256()
+        with open(ckpt_path, 'rb') as f:
+            for chunk in iter(lambda: f.read(1 << 20), b''):
+                digest.update(chunk)
+        config.pretrained_sha256 = digest.hexdigest()
+    # Dataclass config lets the shared checkpoint cache identify this model
+    model.config = config
     return model

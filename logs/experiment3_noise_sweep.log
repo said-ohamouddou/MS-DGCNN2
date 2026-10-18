@@ -1,0 +1,1179 @@
+INFO:__main__:Noise (clean training): raw_only, fold 0
+INFO:utils.experiment_utils:Loaded 552 samples for fold 0 train
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Reusing fold 0: a69aa1410a04, OA=87.77
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 0.0, 'coordinate_unit': None, 'outlier_rate': 0.0}: OA=87.77 (clean 87.77)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 0.5, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=87.77 (clean 87.77)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 1.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=88.49 (clean 87.77)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 2.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=89.21 (clean 87.77)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 5.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=89.21 (clean 87.77)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 10.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=87.77 (clean 87.77)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 20.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=88.49 (clean 87.77)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 30.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=87.77 (clean 87.77)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 50.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=89.93 (clean 87.77)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 75.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=87.77 (clean 87.77)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 100.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=86.33 (clean 87.77)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 150.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=85.61 (clean 87.77)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 300.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=79.86 (clean 87.77)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 500.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=57.55 (clean 87.77)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 1000.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=36.69 (clean 87.77)
+INFO:__main__:Noise (clean training): raw_only, fold 1
+INFO:utils.experiment_utils:Loaded 553 samples for fold 1 train
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Reusing fold 1: 0391f497c651, OA=85.51
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 0.0, 'coordinate_unit': None, 'outlier_rate': 0.0}: OA=85.51 (clean 85.51)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 0.5, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=84.06 (clean 85.51)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 1.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=83.33 (clean 85.51)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 2.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=82.61 (clean 85.51)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 5.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=83.33 (clean 85.51)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 10.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=81.16 (clean 85.51)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 20.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=84.06 (clean 85.51)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 30.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=81.88 (clean 85.51)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 50.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=84.78 (clean 85.51)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 75.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=84.78 (clean 85.51)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 100.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=83.33 (clean 85.51)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 150.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=78.26 (clean 85.51)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 300.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=68.12 (clean 85.51)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 500.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=58.70 (clean 85.51)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 1000.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=41.30 (clean 85.51)
+INFO:__main__:Noise (clean training): raw_only, fold 2
+INFO:utils.experiment_utils:Loaded 553 samples for fold 2 train
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Reusing fold 2: 51b1653610e2, OA=88.41
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 0.0, 'coordinate_unit': None, 'outlier_rate': 0.0}: OA=88.41 (clean 88.41)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 0.5, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=86.96 (clean 88.41)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 1.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=86.23 (clean 88.41)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 2.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=84.06 (clean 88.41)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 5.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=84.78 (clean 88.41)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 10.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=84.78 (clean 88.41)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 20.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=86.23 (clean 88.41)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 30.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=85.51 (clean 88.41)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 50.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=86.96 (clean 88.41)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 75.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=87.68 (clean 88.41)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 100.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=84.78 (clean 88.41)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 150.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=83.33 (clean 88.41)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 300.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=72.46 (clean 88.41)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 500.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=57.97 (clean 88.41)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 1000.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=46.38 (clean 88.41)
+INFO:__main__:Noise (clean training): raw_only, fold 3
+INFO:utils.experiment_utils:Loaded 553 samples for fold 3 train
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Reusing fold 3: 579c9313435a, OA=89.86
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 0.0, 'coordinate_unit': None, 'outlier_rate': 0.0}: OA=89.86 (clean 89.86)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 0.5, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=89.13 (clean 89.86)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 1.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=89.13 (clean 89.86)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 2.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=88.41 (clean 89.86)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 5.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=89.86 (clean 89.86)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 10.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=88.41 (clean 89.86)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 20.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=89.13 (clean 89.86)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 30.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=89.13 (clean 89.86)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 50.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=86.96 (clean 89.86)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 75.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=88.41 (clean 89.86)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 100.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=87.68 (clean 89.86)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 150.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=83.33 (clean 89.86)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 300.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=72.46 (clean 89.86)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 500.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=66.67 (clean 89.86)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 1000.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=39.13 (clean 89.86)
+INFO:__main__:Noise (clean training): raw_only, fold 4
+INFO:utils.experiment_utils:Loaded 553 samples for fold 4 train
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Reusing fold 4: 187ff413c4e2, OA=81.16
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 0.0, 'coordinate_unit': None, 'outlier_rate': 0.0}: OA=81.16 (clean 81.16)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 0.5, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=81.16 (clean 81.16)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 1.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=81.16 (clean 81.16)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 2.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=81.16 (clean 81.16)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 5.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=81.16 (clean 81.16)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 10.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=81.88 (clean 81.16)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 20.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=82.61 (clean 81.16)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 30.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=81.88 (clean 81.16)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 50.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=82.61 (clean 81.16)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 75.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=80.43 (clean 81.16)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 100.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=78.99 (clean 81.16)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 150.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=81.16 (clean 81.16)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 300.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=71.01 (clean 81.16)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 500.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=57.25 (clean 81.16)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 1000.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=36.23 (clean 81.16)
+INFO:__main__:Noise (clean training): hybrid_everywhere, fold 0
+INFO:utils.experiment_utils:Loaded 552 samples for fold 0 train
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Reusing fold 0: 842d5c401095, OA=89.21
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 0.0, 'coordinate_unit': None, 'outlier_rate': 0.0}: OA=89.21 (clean 89.21)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 0.5, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=89.93 (clean 89.21)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 1.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=89.93 (clean 89.21)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 2.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=89.93 (clean 89.21)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 5.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=90.65 (clean 89.21)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 10.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=91.37 (clean 89.21)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 20.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=89.93 (clean 89.21)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 30.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=89.93 (clean 89.21)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 50.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=89.21 (clean 89.21)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 75.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=80.58 (clean 89.21)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 100.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=77.70 (clean 89.21)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 150.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=61.87 (clean 89.21)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 300.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=38.13 (clean 89.21)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 500.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=33.81 (clean 89.21)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 1000.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=37.41 (clean 89.21)
+INFO:__main__:Noise (clean training): hybrid_everywhere, fold 1
+INFO:utils.experiment_utils:Loaded 553 samples for fold 1 train
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Reusing fold 1: 4af57f685008, OA=92.75
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 0.0, 'coordinate_unit': None, 'outlier_rate': 0.0}: OA=92.75 (clean 92.75)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 0.5, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=92.75 (clean 92.75)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 1.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=92.75 (clean 92.75)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 2.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=93.48 (clean 92.75)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 5.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=90.58 (clean 92.75)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 10.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=92.75 (clean 92.75)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 20.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=91.30 (clean 92.75)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 30.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=92.75 (clean 92.75)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 50.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=92.75 (clean 92.75)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 75.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=89.13 (clean 92.75)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 100.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=80.43 (clean 92.75)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 150.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=58.70 (clean 92.75)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 300.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=36.23 (clean 92.75)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 500.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=37.68 (clean 92.75)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 1000.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=35.51 (clean 92.75)
+INFO:__main__:Noise (clean training): hybrid_everywhere, fold 2
+INFO:utils.experiment_utils:Loaded 553 samples for fold 2 train
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Reusing fold 2: 380986107f5b, OA=89.13
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 0.0, 'coordinate_unit': None, 'outlier_rate': 0.0}: OA=89.13 (clean 89.13)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 0.5, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=89.86 (clean 89.13)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 1.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=90.58 (clean 89.13)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 2.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=88.41 (clean 89.13)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 5.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=89.86 (clean 89.13)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 10.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=90.58 (clean 89.13)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 20.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=89.13 (clean 89.13)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 30.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=92.03 (clean 89.13)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 50.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=90.58 (clean 89.13)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 75.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=82.61 (clean 89.13)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 100.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=73.91 (clean 89.13)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 150.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=52.90 (clean 89.13)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 300.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=33.33 (clean 89.13)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 500.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=26.81 (clean 89.13)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 1000.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=28.26 (clean 89.13)
+INFO:__main__:Noise (clean training): hybrid_everywhere, fold 3
+INFO:utils.experiment_utils:Loaded 553 samples for fold 3 train
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Reusing fold 3: 1134dbce4258, OA=93.48
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 0.0, 'coordinate_unit': None, 'outlier_rate': 0.0}: OA=93.48 (clean 93.48)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 0.5, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=92.75 (clean 93.48)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 1.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=92.75 (clean 93.48)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 2.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=92.75 (clean 93.48)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 5.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=92.75 (clean 93.48)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 10.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=92.03 (clean 93.48)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 20.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=92.75 (clean 93.48)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 30.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=93.48 (clean 93.48)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 50.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=91.30 (clean 93.48)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 75.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=87.68 (clean 93.48)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 100.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=82.61 (clean 93.48)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 150.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=69.57 (clean 93.48)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 300.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=39.86 (clean 93.48)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 500.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=38.41 (clean 93.48)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 1000.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=35.51 (clean 93.48)
+INFO:__main__:Noise (clean training): hybrid_everywhere, fold 4
+INFO:utils.experiment_utils:Loaded 553 samples for fold 4 train
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Reusing fold 4: a375c50a8ec0, OA=91.30
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 0.0, 'coordinate_unit': None, 'outlier_rate': 0.0}: OA=91.30 (clean 91.30)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 0.5, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=89.86 (clean 91.30)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 1.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=87.68 (clean 91.30)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 2.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=89.86 (clean 91.30)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 5.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=87.68 (clean 91.30)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 10.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=88.41 (clean 91.30)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 20.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=88.41 (clean 91.30)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 30.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=84.78 (clean 91.30)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 50.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=83.33 (clean 91.30)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 75.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=84.06 (clean 91.30)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 100.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=80.43 (clean 91.30)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 150.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=66.67 (clean 91.30)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 300.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=43.48 (clean 91.30)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 500.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=42.75 (clean 91.30)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 1000.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=31.88 (clean 91.30)
+INFO:__main__:Noise (clean training): default, fold 0
+INFO:utils.experiment_utils:Loaded 552 samples for fold 0 train
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Reusing fold 0: 5f664b1d8aca, OA=85.61
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 0.0, 'coordinate_unit': None, 'outlier_rate': 0.0}: OA=85.61 (clean 85.61)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 0.5, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=85.61 (clean 85.61)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 1.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=85.61 (clean 85.61)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 2.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=85.61 (clean 85.61)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 5.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=86.33 (clean 85.61)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 10.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=87.77 (clean 85.61)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 20.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=87.77 (clean 85.61)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 30.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=88.49 (clean 85.61)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 50.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=86.33 (clean 85.61)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 75.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=86.33 (clean 85.61)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 100.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=84.89 (clean 85.61)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 150.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=76.26 (clean 85.61)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 300.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=61.15 (clean 85.61)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 500.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=48.92 (clean 85.61)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 1000.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=39.57 (clean 85.61)
+INFO:__main__:Noise (clean training): default, fold 1
+INFO:utils.experiment_utils:Loaded 553 samples for fold 1 train
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Reusing fold 1: 3195ff885491, OA=91.30
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 0.0, 'coordinate_unit': None, 'outlier_rate': 0.0}: OA=91.30 (clean 91.30)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 0.5, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=91.30 (clean 91.30)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 1.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=89.86 (clean 91.30)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 2.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=89.86 (clean 91.30)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 5.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=90.58 (clean 91.30)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 10.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=89.86 (clean 91.30)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 20.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=88.41 (clean 91.30)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 30.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=88.41 (clean 91.30)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 50.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=87.68 (clean 91.30)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 75.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=85.51 (clean 91.30)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 100.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=84.06 (clean 91.30)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 150.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=78.26 (clean 91.30)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 300.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=63.04 (clean 91.30)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 500.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=46.38 (clean 91.30)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 1000.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=36.96 (clean 91.30)
+INFO:__main__:Noise (clean training): default, fold 2
+INFO:utils.experiment_utils:Loaded 553 samples for fold 2 train
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Reusing fold 2: bd8222fffaed, OA=86.96
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 0.0, 'coordinate_unit': None, 'outlier_rate': 0.0}: OA=86.96 (clean 86.96)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 0.5, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=86.96 (clean 86.96)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 1.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=87.68 (clean 86.96)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 2.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=89.13 (clean 86.96)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 5.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=87.68 (clean 86.96)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 10.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=88.41 (clean 86.96)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 20.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=86.96 (clean 86.96)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 30.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=87.68 (clean 86.96)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 50.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=87.68 (clean 86.96)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 75.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=89.13 (clean 86.96)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 100.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=86.96 (clean 86.96)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 150.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=82.61 (clean 86.96)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 300.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=68.12 (clean 86.96)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 500.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=50.72 (clean 86.96)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 1000.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=39.13 (clean 86.96)
+INFO:__main__:Noise (clean training): default, fold 3
+INFO:utils.experiment_utils:Loaded 553 samples for fold 3 train
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Reusing fold 3: 0e5cd1f11868, OA=91.30
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 0.0, 'coordinate_unit': None, 'outlier_rate': 0.0}: OA=91.30 (clean 91.30)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 0.5, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=91.30 (clean 91.30)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 1.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=91.30 (clean 91.30)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 2.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=91.30 (clean 91.30)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 5.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=92.75 (clean 91.30)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 10.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=91.30 (clean 91.30)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 20.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=91.30 (clean 91.30)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 30.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=93.48 (clean 91.30)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 50.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=91.30 (clean 91.30)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 75.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=89.86 (clean 91.30)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 100.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=88.41 (clean 91.30)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 150.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=82.61 (clean 91.30)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 300.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=65.22 (clean 91.30)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 500.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=49.28 (clean 91.30)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 1000.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=28.99 (clean 91.30)
+INFO:__main__:Noise (clean training): default, fold 4
+INFO:utils.experiment_utils:Loaded 553 samples for fold 4 train
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Reusing fold 4: d6f62cf34d82, OA=86.23
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 0.0, 'coordinate_unit': None, 'outlier_rate': 0.0}: OA=86.23 (clean 86.23)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 0.5, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=86.23 (clean 86.23)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 1.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=86.23 (clean 86.23)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 2.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=86.96 (clean 86.23)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 5.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=87.68 (clean 86.23)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 10.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=87.68 (clean 86.23)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 20.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=84.78 (clean 86.23)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 30.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=87.68 (clean 86.23)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 50.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=87.68 (clean 86.23)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 75.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=83.33 (clean 86.23)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 100.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=81.88 (clean 86.23)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 150.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=77.54 (clean 86.23)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 300.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=62.32 (clean 86.23)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 500.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=48.55 (clean 86.23)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 1000.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=40.58 (clean 86.23)
+INFO:__main__:Noise (clean training): reversed, fold 0
+INFO:utils.experiment_utils:Loaded 552 samples for fold 0 train
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Reusing fold 0: 5c189bdcd3fb, OA=91.37
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 0.0, 'coordinate_unit': None, 'outlier_rate': 0.0}: OA=91.37 (clean 91.37)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 0.5, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=92.81 (clean 91.37)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 1.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=92.81 (clean 91.37)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 2.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=92.09 (clean 91.37)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 5.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=93.53 (clean 91.37)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 10.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=92.81 (clean 91.37)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 20.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=92.09 (clean 91.37)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 30.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=92.81 (clean 91.37)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 50.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=88.49 (clean 91.37)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 75.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=82.73 (clean 91.37)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 100.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=78.42 (clean 91.37)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 150.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=60.43 (clean 91.37)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 300.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=38.13 (clean 91.37)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 500.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=35.97 (clean 91.37)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 1000.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=32.37 (clean 91.37)
+INFO:__main__:Noise (clean training): reversed, fold 1
+INFO:utils.experiment_utils:Loaded 553 samples for fold 1 train
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Reusing fold 1: eeb932179a03, OA=92.75
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 0.0, 'coordinate_unit': None, 'outlier_rate': 0.0}: OA=92.75 (clean 92.75)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 0.5, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=92.75 (clean 92.75)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 1.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=92.75 (clean 92.75)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 2.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=92.03 (clean 92.75)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 5.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=91.30 (clean 92.75)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 10.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=92.75 (clean 92.75)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 20.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=92.75 (clean 92.75)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 30.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=91.30 (clean 92.75)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 50.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=89.86 (clean 92.75)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 75.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=84.78 (clean 92.75)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 100.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=80.43 (clean 92.75)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 150.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=58.70 (clean 92.75)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 300.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=38.41 (clean 92.75)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 500.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=34.78 (clean 92.75)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 1000.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=31.88 (clean 92.75)
+INFO:__main__:Noise (clean training): reversed, fold 2
+INFO:utils.experiment_utils:Loaded 553 samples for fold 2 train
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Reusing fold 2: b603c78ce403, OA=87.68
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 0.0, 'coordinate_unit': None, 'outlier_rate': 0.0}: OA=87.68 (clean 87.68)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 0.5, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=89.13 (clean 87.68)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 1.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=87.68 (clean 87.68)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 2.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=87.68 (clean 87.68)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 5.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=89.13 (clean 87.68)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 10.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=88.41 (clean 87.68)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 20.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=86.23 (clean 87.68)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 30.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=84.78 (clean 87.68)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 50.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=84.78 (clean 87.68)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 75.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=87.68 (clean 87.68)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 100.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=78.26 (clean 87.68)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 150.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=60.14 (clean 87.68)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 300.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=36.96 (clean 87.68)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 500.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=32.61 (clean 87.68)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 1000.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=28.99 (clean 87.68)
+INFO:__main__:Noise (clean training): reversed, fold 3
+INFO:utils.experiment_utils:Loaded 553 samples for fold 3 train
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Reusing fold 3: b46c7ea2d2db, OA=92.75
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 0.0, 'coordinate_unit': None, 'outlier_rate': 0.0}: OA=92.75 (clean 92.75)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 0.5, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=91.30 (clean 92.75)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 1.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=91.30 (clean 92.75)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 2.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=91.30 (clean 92.75)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 5.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=92.75 (clean 92.75)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 10.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=91.30 (clean 92.75)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 20.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=92.03 (clean 92.75)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 30.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=92.03 (clean 92.75)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 50.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=90.58 (clean 92.75)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 75.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=87.68 (clean 92.75)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 100.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=79.71 (clean 92.75)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 150.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=70.29 (clean 92.75)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 300.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=42.03 (clean 92.75)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 500.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=42.03 (clean 92.75)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 1000.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=37.68 (clean 92.75)
+INFO:__main__:Noise (clean training): reversed, fold 4
+INFO:utils.experiment_utils:Loaded 553 samples for fold 4 train
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Reusing fold 4: 5c05266047af, OA=86.23
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 0.0, 'coordinate_unit': None, 'outlier_rate': 0.0}: OA=86.23 (clean 86.23)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 0.5, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=86.23 (clean 86.23)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 1.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=86.96 (clean 86.23)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 2.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=84.06 (clean 86.23)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 5.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=85.51 (clean 86.23)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 10.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=86.23 (clean 86.23)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 20.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=84.78 (clean 86.23)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 30.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=86.96 (clean 86.23)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 50.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=86.23 (clean 86.23)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 75.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=84.06 (clean 86.23)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 100.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=76.09 (clean 86.23)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 150.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=59.42 (clean 86.23)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 300.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=38.41 (clean 86.23)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 500.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=33.33 (clean 86.23)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 1000.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=30.43 (clean 86.23)
+INFO:__main__:Noise (clean training): dgcnn, fold 0
+INFO:utils.experiment_utils:Loaded 552 samples for fold 0 train
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Reusing fold 0: 6d2c6b7b5bb9, OA=88.49
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 0.0, 'coordinate_unit': None, 'outlier_rate': 0.0}: OA=88.49 (clean 88.49)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 0.5, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=87.05 (clean 88.49)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 1.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=87.77 (clean 88.49)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 2.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=87.77 (clean 88.49)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 5.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=89.21 (clean 88.49)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 10.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=88.49 (clean 88.49)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 20.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=88.49 (clean 88.49)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 30.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=88.49 (clean 88.49)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 50.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=87.05 (clean 88.49)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 75.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=85.61 (clean 88.49)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 100.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=86.33 (clean 88.49)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 150.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=82.73 (clean 88.49)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 300.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=71.22 (clean 88.49)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 500.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=62.59 (clean 88.49)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 1000.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=46.76 (clean 88.49)
+INFO:__main__:Noise (clean training): dgcnn, fold 1
+INFO:utils.experiment_utils:Loaded 553 samples for fold 1 train
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Reusing fold 1: 4b78f7910f33, OA=92.03
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 0.0, 'coordinate_unit': None, 'outlier_rate': 0.0}: OA=92.03 (clean 92.03)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 0.5, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=92.03 (clean 92.03)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 1.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=89.86 (clean 92.03)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 2.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=92.03 (clean 92.03)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 5.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=89.86 (clean 92.03)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 10.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=90.58 (clean 92.03)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 20.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=89.13 (clean 92.03)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 30.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=89.13 (clean 92.03)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 50.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=88.41 (clean 92.03)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 75.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=83.33 (clean 92.03)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 100.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=82.61 (clean 92.03)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 150.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=78.26 (clean 92.03)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 300.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=63.77 (clean 92.03)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 500.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=55.07 (clean 92.03)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 1000.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=36.23 (clean 92.03)
+INFO:__main__:Noise (clean training): dgcnn, fold 2
+INFO:utils.experiment_utils:Loaded 553 samples for fold 2 train
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Reusing fold 2: 542154a47acd, OA=82.61
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 0.0, 'coordinate_unit': None, 'outlier_rate': 0.0}: OA=82.61 (clean 82.61)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 0.5, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=81.16 (clean 82.61)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 1.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=81.16 (clean 82.61)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 2.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=83.33 (clean 82.61)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 5.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=83.33 (clean 82.61)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 10.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=84.06 (clean 82.61)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 20.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=84.06 (clean 82.61)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 30.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=81.88 (clean 82.61)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 50.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=79.71 (clean 82.61)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 75.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=84.06 (clean 82.61)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 100.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=81.16 (clean 82.61)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 150.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=76.81 (clean 82.61)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 300.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=68.12 (clean 82.61)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 500.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=52.90 (clean 82.61)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 1000.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=43.48 (clean 82.61)
+INFO:__main__:Noise (clean training): dgcnn, fold 3
+INFO:utils.experiment_utils:Loaded 553 samples for fold 3 train
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Reusing fold 3: afda07618482, OA=89.86
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 0.0, 'coordinate_unit': None, 'outlier_rate': 0.0}: OA=89.86 (clean 89.86)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 0.5, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=89.86 (clean 89.86)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 1.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=89.86 (clean 89.86)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 2.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=90.58 (clean 89.86)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 5.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=90.58 (clean 89.86)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 10.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=92.03 (clean 89.86)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 20.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=86.23 (clean 89.86)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 30.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=88.41 (clean 89.86)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 50.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=86.96 (clean 89.86)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 75.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=88.41 (clean 89.86)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 100.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=84.78 (clean 89.86)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 150.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=77.54 (clean 89.86)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 300.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=66.67 (clean 89.86)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 500.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=57.97 (clean 89.86)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 1000.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=36.96 (clean 89.86)
+INFO:__main__:Noise (clean training): dgcnn, fold 4
+INFO:utils.experiment_utils:Loaded 553 samples for fold 4 train
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Reusing fold 4: a3f97d9f37d7, OA=78.99
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 0.0, 'coordinate_unit': None, 'outlier_rate': 0.0}: OA=78.99 (clean 78.99)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 0.5, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=78.26 (clean 78.99)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 1.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=79.71 (clean 78.99)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 2.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=79.71 (clean 78.99)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 5.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=80.43 (clean 78.99)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 10.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=78.26 (clean 78.99)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 20.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=79.71 (clean 78.99)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 30.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=78.26 (clean 78.99)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 50.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=78.26 (clean 78.99)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 75.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=76.09 (clean 78.99)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 100.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=78.99 (clean 78.99)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 150.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=75.36 (clean 78.99)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 300.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=61.59 (clean 78.99)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 500.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=51.45 (clean 78.99)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 1000.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=33.33 (clean 78.99)
+INFO:__main__:Noise (clean training): ms_dgcnn, fold 0
+INFO:utils.experiment_utils:Loaded 552 samples for fold 0 train
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Reusing fold 0: b6086f42f300, OA=86.33
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 0.0, 'coordinate_unit': None, 'outlier_rate': 0.0}: OA=86.33 (clean 86.33)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 0.5, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=86.33 (clean 86.33)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 1.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=86.33 (clean 86.33)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 2.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=87.77 (clean 86.33)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 5.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=84.89 (clean 86.33)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 10.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=87.77 (clean 86.33)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 20.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=87.05 (clean 86.33)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 30.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=85.61 (clean 86.33)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 50.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=85.61 (clean 86.33)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 75.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=83.45 (clean 86.33)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 100.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=84.89 (clean 86.33)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 150.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=86.33 (clean 86.33)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 300.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=76.26 (clean 86.33)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 500.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=53.24 (clean 86.33)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 1000.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=27.34 (clean 86.33)
+INFO:__main__:Noise (clean training): ms_dgcnn, fold 1
+INFO:utils.experiment_utils:Loaded 553 samples for fold 1 train
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Reusing fold 1: fe537233778c, OA=81.88
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 0.0, 'coordinate_unit': None, 'outlier_rate': 0.0}: OA=81.88 (clean 81.88)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 0.5, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=80.43 (clean 81.88)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 1.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=81.88 (clean 81.88)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 2.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=81.16 (clean 81.88)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 5.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=81.88 (clean 81.88)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 10.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=81.88 (clean 81.88)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 20.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=82.61 (clean 81.88)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 30.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=81.88 (clean 81.88)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 50.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=85.51 (clean 81.88)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 75.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=81.16 (clean 81.88)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 100.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=79.71 (clean 81.88)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 150.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=79.71 (clean 81.88)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 300.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=73.19 (clean 81.88)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 500.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=55.80 (clean 81.88)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 1000.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=33.33 (clean 81.88)
+INFO:__main__:Noise (clean training): ms_dgcnn, fold 2
+INFO:utils.experiment_utils:Loaded 553 samples for fold 2 train
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Reusing fold 2: 9aab4e65e6ef, OA=87.68
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 0.0, 'coordinate_unit': None, 'outlier_rate': 0.0}: OA=87.68 (clean 87.68)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 0.5, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=87.68 (clean 87.68)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 1.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=87.68 (clean 87.68)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 2.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=86.23 (clean 87.68)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 5.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=85.51 (clean 87.68)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 10.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=87.68 (clean 87.68)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 20.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=87.68 (clean 87.68)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 30.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=86.23 (clean 87.68)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 50.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=85.51 (clean 87.68)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 75.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=86.96 (clean 87.68)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 100.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=84.06 (clean 87.68)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 150.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=83.33 (clean 87.68)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 300.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=76.09 (clean 87.68)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 500.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=65.94 (clean 87.68)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 1000.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=37.68 (clean 87.68)
+INFO:__main__:Noise (clean training): ms_dgcnn, fold 3
+INFO:utils.experiment_utils:Loaded 553 samples for fold 3 train
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Reusing fold 3: 9b84e9840583, OA=87.68
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 0.0, 'coordinate_unit': None, 'outlier_rate': 0.0}: OA=87.68 (clean 87.68)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 0.5, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=88.41 (clean 87.68)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 1.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=87.68 (clean 87.68)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 2.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=87.68 (clean 87.68)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 5.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=86.23 (clean 87.68)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 10.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=86.96 (clean 87.68)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 20.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=89.13 (clean 87.68)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 30.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=86.23 (clean 87.68)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 50.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=88.41 (clean 87.68)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 75.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=87.68 (clean 87.68)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 100.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=89.86 (clean 87.68)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 150.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=87.68 (clean 87.68)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 300.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=81.16 (clean 87.68)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 500.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=73.91 (clean 87.68)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 1000.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=48.55 (clean 87.68)
+INFO:__main__:Noise (clean training): ms_dgcnn, fold 4
+INFO:utils.experiment_utils:Loaded 553 samples for fold 4 train
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Reusing fold 4: 7028a88b7387, OA=83.33
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 0.0, 'coordinate_unit': None, 'outlier_rate': 0.0}: OA=83.33 (clean 83.33)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 0.5, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=82.61 (clean 83.33)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 1.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=82.61 (clean 83.33)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 2.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=83.33 (clean 83.33)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 5.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=84.78 (clean 83.33)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 10.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=84.78 (clean 83.33)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 20.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=84.78 (clean 83.33)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 30.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=84.78 (clean 83.33)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 50.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=83.33 (clean 83.33)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 75.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=85.51 (clean 83.33)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 100.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=86.96 (clean 83.33)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 150.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=86.96 (clean 83.33)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 300.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=76.81 (clean 83.33)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 500.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=55.07 (clean 83.33)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 1000.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=39.13 (clean 83.33)
+INFO:__main__:Noise (clean training): pointm2ae, fold 0
+INFO:utils.experiment_utils:Loaded 552 samples for fold 0 train
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+[PointM2AE] Loaded 231/293 parameter groups (82.94% of checkpoint parameters)
+missing_keys: ['norm.weight', 'norm.bias', 'cls_head_finetune.0.weight', 'cls_head_finetune.0.bias', 'cls_head_finetune.1.weight', 'cls_head_finetune.1.bias', 'cls_head_finetune.1.running_mean', 'cls_head_finetune.1.running_var', 'cls_head_finetune.4.weight', 'cls_head_finetune.4.bias', 'cls_head_finetune.5.weight', 'cls_head_finetune.5.bias', 'cls_head_finetune.5.running_mean', 'cls_head_finetune.5.running_var', 'cls_head_finetune.8.weight', 'cls_head_finetune.8.bias']
+unexpected_keys: ['mask_token', 'h_decoder.0.blocks.0.norm1.weight', 'h_decoder.0.blocks.0.norm1.bias', 'h_decoder.0.blocks.0.norm2.weight', 'h_decoder.0.blocks.0.norm2.bias', 'h_decoder.0.blocks.0.mlp.fc1.weight', 'h_decoder.0.blocks.0.mlp.fc1.bias', 'h_decoder.0.blocks.0.mlp.fc2.weight', 'h_decoder.0.blocks.0.mlp.fc2.bias', 'h_decoder.0.blocks.0.attn.qkv.weight', 'h_decoder.0.blocks.0.attn.proj.weight', 'h_decoder.0.blocks.0.attn.proj.bias', 'h_decoder.1.blocks.0.norm1.weight', 'h_decoder.1.blocks.0.norm1.bias', 'h_decoder.1.blocks.0.norm2.weight', 'h_decoder.1.blocks.0.norm2.bias', 'h_decoder.1.blocks.0.mlp.fc1.weight', 'h_decoder.1.blocks.0.mlp.fc1.bias', 'h_decoder.1.blocks.0.mlp.fc2.weight', 'h_decoder.1.blocks.0.mlp.fc2.bias', 'h_decoder.1.blocks.0.attn.qkv.weight', 'h_decoder.1.blocks.0.attn.proj.weight', 'h_decoder.1.blocks.0.attn.proj.bias', 'decoder_pos_embeds.0.0.weight', 'decoder_pos_embeds.0.0.bias', 'decoder_pos_embeds.0.2.weight', 'decoder_pos_embeds.0.2.bias', 'decoder_pos_embeds.1.0.weight', 'decoder_pos_embeds.1.0.bias', 'decoder_pos_embeds.1.2.weight', 'decoder_pos_embeds.1.2.bias', 'token_prop.0.fuse.net.0.weight', 'token_prop.0.fuse.net.0.bias', 'token_prop.0.fuse.net.1.weight', 'token_prop.0.fuse.net.1.bias', 'token_prop.0.fuse.net.1.running_mean', 'token_prop.0.fuse.net.1.running_var', 'token_prop.0.fuse.net.1.num_batches_tracked', 'token_prop.0.extraction.operation.0.net1.0.weight', 'token_prop.0.extraction.operation.0.net1.0.bias', 'token_prop.0.extraction.operation.0.net1.1.weight', 'token_prop.0.extraction.operation.0.net1.1.bias', 'token_prop.0.extraction.operation.0.net1.1.running_mean', 'token_prop.0.extraction.operation.0.net1.1.running_var', 'token_prop.0.extraction.operation.0.net1.1.num_batches_tracked', 'token_prop.0.extraction.operation.0.net2.0.weight', 'token_prop.0.extraction.operation.0.net2.0.bias', 'token_prop.0.extraction.operation.0.net2.1.weight', 'token_prop.0.extraction.operation.0.net2.1.bias', 'token_prop.0.extraction.operation.0.net2.1.running_mean', 'token_prop.0.extraction.operation.0.net2.1.running_var', 'token_prop.0.extraction.operation.0.net2.1.num_batches_tracked', 'decoder_norm.weight', 'decoder_norm.bias', 'rec_head.weight', 'rec_head.bias', 'h_encoder.encoder_norms.0.weight', 'h_encoder.encoder_norms.0.bias', 'h_encoder.encoder_norms.1.weight', 'h_encoder.encoder_norms.1.bias', 'h_encoder.encoder_norms.2.weight', 'h_encoder.encoder_norms.2.bias']
+[PointM2AE] Successful Loading the ckpt from /home/said/Desktop/eng app ai/final_MS_DGCNN____Multi_Scale_Dynamic_Graph_Convolution_with_Scale_Dependent_Normalization_for_Robust_LiDAR_Tree_Species_Classification/abalation stduies msdgcnn2/models/pointm2ae/pretrained_m2ae.pth
+INFO:utils.experiment_utils:Reusing fold 0: f62723d44ae2, OA=92.81
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 0.0, 'coordinate_unit': None, 'outlier_rate': 0.0}: OA=92.81 (clean 92.81)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 0.5, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=93.53 (clean 92.81)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 1.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=93.53 (clean 92.81)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 2.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=93.53 (clean 92.81)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 5.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=91.37 (clean 92.81)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 10.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=90.65 (clean 92.81)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 20.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=90.65 (clean 92.81)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 30.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=89.93 (clean 92.81)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 50.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=89.93 (clean 92.81)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 75.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=87.77 (clean 92.81)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 100.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=84.89 (clean 92.81)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 150.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=85.61 (clean 92.81)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 300.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=69.06 (clean 92.81)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 500.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=53.96 (clean 92.81)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Fold 0 {'retention': 1.0, 'noise_sigma_mm': 1000.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=33.09 (clean 92.81)
+INFO:__main__:Noise (clean training): pointm2ae, fold 1
+INFO:utils.experiment_utils:Loaded 553 samples for fold 1 train
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+[PointM2AE] Loaded 231/293 parameter groups (82.94% of checkpoint parameters)
+missing_keys: ['norm.weight', 'norm.bias', 'cls_head_finetune.0.weight', 'cls_head_finetune.0.bias', 'cls_head_finetune.1.weight', 'cls_head_finetune.1.bias', 'cls_head_finetune.1.running_mean', 'cls_head_finetune.1.running_var', 'cls_head_finetune.4.weight', 'cls_head_finetune.4.bias', 'cls_head_finetune.5.weight', 'cls_head_finetune.5.bias', 'cls_head_finetune.5.running_mean', 'cls_head_finetune.5.running_var', 'cls_head_finetune.8.weight', 'cls_head_finetune.8.bias']
+unexpected_keys: ['mask_token', 'h_decoder.0.blocks.0.norm1.weight', 'h_decoder.0.blocks.0.norm1.bias', 'h_decoder.0.blocks.0.norm2.weight', 'h_decoder.0.blocks.0.norm2.bias', 'h_decoder.0.blocks.0.mlp.fc1.weight', 'h_decoder.0.blocks.0.mlp.fc1.bias', 'h_decoder.0.blocks.0.mlp.fc2.weight', 'h_decoder.0.blocks.0.mlp.fc2.bias', 'h_decoder.0.blocks.0.attn.qkv.weight', 'h_decoder.0.blocks.0.attn.proj.weight', 'h_decoder.0.blocks.0.attn.proj.bias', 'h_decoder.1.blocks.0.norm1.weight', 'h_decoder.1.blocks.0.norm1.bias', 'h_decoder.1.blocks.0.norm2.weight', 'h_decoder.1.blocks.0.norm2.bias', 'h_decoder.1.blocks.0.mlp.fc1.weight', 'h_decoder.1.blocks.0.mlp.fc1.bias', 'h_decoder.1.blocks.0.mlp.fc2.weight', 'h_decoder.1.blocks.0.mlp.fc2.bias', 'h_decoder.1.blocks.0.attn.qkv.weight', 'h_decoder.1.blocks.0.attn.proj.weight', 'h_decoder.1.blocks.0.attn.proj.bias', 'decoder_pos_embeds.0.0.weight', 'decoder_pos_embeds.0.0.bias', 'decoder_pos_embeds.0.2.weight', 'decoder_pos_embeds.0.2.bias', 'decoder_pos_embeds.1.0.weight', 'decoder_pos_embeds.1.0.bias', 'decoder_pos_embeds.1.2.weight', 'decoder_pos_embeds.1.2.bias', 'token_prop.0.fuse.net.0.weight', 'token_prop.0.fuse.net.0.bias', 'token_prop.0.fuse.net.1.weight', 'token_prop.0.fuse.net.1.bias', 'token_prop.0.fuse.net.1.running_mean', 'token_prop.0.fuse.net.1.running_var', 'token_prop.0.fuse.net.1.num_batches_tracked', 'token_prop.0.extraction.operation.0.net1.0.weight', 'token_prop.0.extraction.operation.0.net1.0.bias', 'token_prop.0.extraction.operation.0.net1.1.weight', 'token_prop.0.extraction.operation.0.net1.1.bias', 'token_prop.0.extraction.operation.0.net1.1.running_mean', 'token_prop.0.extraction.operation.0.net1.1.running_var', 'token_prop.0.extraction.operation.0.net1.1.num_batches_tracked', 'token_prop.0.extraction.operation.0.net2.0.weight', 'token_prop.0.extraction.operation.0.net2.0.bias', 'token_prop.0.extraction.operation.0.net2.1.weight', 'token_prop.0.extraction.operation.0.net2.1.bias', 'token_prop.0.extraction.operation.0.net2.1.running_mean', 'token_prop.0.extraction.operation.0.net2.1.running_var', 'token_prop.0.extraction.operation.0.net2.1.num_batches_tracked', 'decoder_norm.weight', 'decoder_norm.bias', 'rec_head.weight', 'rec_head.bias', 'h_encoder.encoder_norms.0.weight', 'h_encoder.encoder_norms.0.bias', 'h_encoder.encoder_norms.1.weight', 'h_encoder.encoder_norms.1.bias', 'h_encoder.encoder_norms.2.weight', 'h_encoder.encoder_norms.2.bias']
+[PointM2AE] Successful Loading the ckpt from /home/said/Desktop/eng app ai/final_MS_DGCNN____Multi_Scale_Dynamic_Graph_Convolution_with_Scale_Dependent_Normalization_for_Robust_LiDAR_Tree_Species_Classification/abalation stduies msdgcnn2/models/pointm2ae/pretrained_m2ae.pth
+INFO:utils.experiment_utils:Reusing fold 1: 34549bde743e, OA=94.20
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 0.0, 'coordinate_unit': None, 'outlier_rate': 0.0}: OA=94.20 (clean 94.20)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 0.5, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=94.20 (clean 94.20)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 1.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=94.20 (clean 94.20)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 2.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=94.20 (clean 94.20)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 5.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=93.48 (clean 94.20)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 10.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=92.75 (clean 94.20)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 20.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=90.58 (clean 94.20)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 30.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=89.13 (clean 94.20)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 50.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=87.68 (clean 94.20)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 75.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=86.96 (clean 94.20)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 100.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=87.68 (clean 94.20)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 150.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=81.16 (clean 94.20)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 300.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=62.32 (clean 94.20)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 500.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=47.83 (clean 94.20)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 1 val
+INFO:utils.experiment_utils:Fold 1 {'retention': 1.0, 'noise_sigma_mm': 1000.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=30.43 (clean 94.20)
+INFO:__main__:Noise (clean training): pointm2ae, fold 2
+INFO:utils.experiment_utils:Loaded 553 samples for fold 2 train
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+[PointM2AE] Loaded 231/293 parameter groups (82.94% of checkpoint parameters)
+missing_keys: ['norm.weight', 'norm.bias', 'cls_head_finetune.0.weight', 'cls_head_finetune.0.bias', 'cls_head_finetune.1.weight', 'cls_head_finetune.1.bias', 'cls_head_finetune.1.running_mean', 'cls_head_finetune.1.running_var', 'cls_head_finetune.4.weight', 'cls_head_finetune.4.bias', 'cls_head_finetune.5.weight', 'cls_head_finetune.5.bias', 'cls_head_finetune.5.running_mean', 'cls_head_finetune.5.running_var', 'cls_head_finetune.8.weight', 'cls_head_finetune.8.bias']
+unexpected_keys: ['mask_token', 'h_decoder.0.blocks.0.norm1.weight', 'h_decoder.0.blocks.0.norm1.bias', 'h_decoder.0.blocks.0.norm2.weight', 'h_decoder.0.blocks.0.norm2.bias', 'h_decoder.0.blocks.0.mlp.fc1.weight', 'h_decoder.0.blocks.0.mlp.fc1.bias', 'h_decoder.0.blocks.0.mlp.fc2.weight', 'h_decoder.0.blocks.0.mlp.fc2.bias', 'h_decoder.0.blocks.0.attn.qkv.weight', 'h_decoder.0.blocks.0.attn.proj.weight', 'h_decoder.0.blocks.0.attn.proj.bias', 'h_decoder.1.blocks.0.norm1.weight', 'h_decoder.1.blocks.0.norm1.bias', 'h_decoder.1.blocks.0.norm2.weight', 'h_decoder.1.blocks.0.norm2.bias', 'h_decoder.1.blocks.0.mlp.fc1.weight', 'h_decoder.1.blocks.0.mlp.fc1.bias', 'h_decoder.1.blocks.0.mlp.fc2.weight', 'h_decoder.1.blocks.0.mlp.fc2.bias', 'h_decoder.1.blocks.0.attn.qkv.weight', 'h_decoder.1.blocks.0.attn.proj.weight', 'h_decoder.1.blocks.0.attn.proj.bias', 'decoder_pos_embeds.0.0.weight', 'decoder_pos_embeds.0.0.bias', 'decoder_pos_embeds.0.2.weight', 'decoder_pos_embeds.0.2.bias', 'decoder_pos_embeds.1.0.weight', 'decoder_pos_embeds.1.0.bias', 'decoder_pos_embeds.1.2.weight', 'decoder_pos_embeds.1.2.bias', 'token_prop.0.fuse.net.0.weight', 'token_prop.0.fuse.net.0.bias', 'token_prop.0.fuse.net.1.weight', 'token_prop.0.fuse.net.1.bias', 'token_prop.0.fuse.net.1.running_mean', 'token_prop.0.fuse.net.1.running_var', 'token_prop.0.fuse.net.1.num_batches_tracked', 'token_prop.0.extraction.operation.0.net1.0.weight', 'token_prop.0.extraction.operation.0.net1.0.bias', 'token_prop.0.extraction.operation.0.net1.1.weight', 'token_prop.0.extraction.operation.0.net1.1.bias', 'token_prop.0.extraction.operation.0.net1.1.running_mean', 'token_prop.0.extraction.operation.0.net1.1.running_var', 'token_prop.0.extraction.operation.0.net1.1.num_batches_tracked', 'token_prop.0.extraction.operation.0.net2.0.weight', 'token_prop.0.extraction.operation.0.net2.0.bias', 'token_prop.0.extraction.operation.0.net2.1.weight', 'token_prop.0.extraction.operation.0.net2.1.bias', 'token_prop.0.extraction.operation.0.net2.1.running_mean', 'token_prop.0.extraction.operation.0.net2.1.running_var', 'token_prop.0.extraction.operation.0.net2.1.num_batches_tracked', 'decoder_norm.weight', 'decoder_norm.bias', 'rec_head.weight', 'rec_head.bias', 'h_encoder.encoder_norms.0.weight', 'h_encoder.encoder_norms.0.bias', 'h_encoder.encoder_norms.1.weight', 'h_encoder.encoder_norms.1.bias', 'h_encoder.encoder_norms.2.weight', 'h_encoder.encoder_norms.2.bias']
+[PointM2AE] Successful Loading the ckpt from /home/said/Desktop/eng app ai/final_MS_DGCNN____Multi_Scale_Dynamic_Graph_Convolution_with_Scale_Dependent_Normalization_for_Robust_LiDAR_Tree_Species_Classification/abalation stduies msdgcnn2/models/pointm2ae/pretrained_m2ae.pth
+INFO:utils.experiment_utils:Reusing fold 2: f7c38256908e, OA=90.58
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 0.0, 'coordinate_unit': None, 'outlier_rate': 0.0}: OA=90.58 (clean 90.58)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 0.5, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=90.58 (clean 90.58)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 1.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=90.58 (clean 90.58)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 2.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=89.86 (clean 90.58)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 5.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=89.86 (clean 90.58)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 10.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=91.30 (clean 90.58)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 20.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=89.86 (clean 90.58)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 30.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=90.58 (clean 90.58)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 50.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=89.86 (clean 90.58)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 75.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=87.68 (clean 90.58)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 100.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=87.68 (clean 90.58)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 150.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=83.33 (clean 90.58)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 300.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=64.49 (clean 90.58)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 500.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=52.17 (clean 90.58)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 2 val
+INFO:utils.experiment_utils:Fold 2 {'retention': 1.0, 'noise_sigma_mm': 1000.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=29.71 (clean 90.58)
+INFO:__main__:Noise (clean training): pointm2ae, fold 3
+INFO:utils.experiment_utils:Loaded 553 samples for fold 3 train
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+[PointM2AE] Loaded 231/293 parameter groups (82.94% of checkpoint parameters)
+missing_keys: ['norm.weight', 'norm.bias', 'cls_head_finetune.0.weight', 'cls_head_finetune.0.bias', 'cls_head_finetune.1.weight', 'cls_head_finetune.1.bias', 'cls_head_finetune.1.running_mean', 'cls_head_finetune.1.running_var', 'cls_head_finetune.4.weight', 'cls_head_finetune.4.bias', 'cls_head_finetune.5.weight', 'cls_head_finetune.5.bias', 'cls_head_finetune.5.running_mean', 'cls_head_finetune.5.running_var', 'cls_head_finetune.8.weight', 'cls_head_finetune.8.bias']
+unexpected_keys: ['mask_token', 'h_decoder.0.blocks.0.norm1.weight', 'h_decoder.0.blocks.0.norm1.bias', 'h_decoder.0.blocks.0.norm2.weight', 'h_decoder.0.blocks.0.norm2.bias', 'h_decoder.0.blocks.0.mlp.fc1.weight', 'h_decoder.0.blocks.0.mlp.fc1.bias', 'h_decoder.0.blocks.0.mlp.fc2.weight', 'h_decoder.0.blocks.0.mlp.fc2.bias', 'h_decoder.0.blocks.0.attn.qkv.weight', 'h_decoder.0.blocks.0.attn.proj.weight', 'h_decoder.0.blocks.0.attn.proj.bias', 'h_decoder.1.blocks.0.norm1.weight', 'h_decoder.1.blocks.0.norm1.bias', 'h_decoder.1.blocks.0.norm2.weight', 'h_decoder.1.blocks.0.norm2.bias', 'h_decoder.1.blocks.0.mlp.fc1.weight', 'h_decoder.1.blocks.0.mlp.fc1.bias', 'h_decoder.1.blocks.0.mlp.fc2.weight', 'h_decoder.1.blocks.0.mlp.fc2.bias', 'h_decoder.1.blocks.0.attn.qkv.weight', 'h_decoder.1.blocks.0.attn.proj.weight', 'h_decoder.1.blocks.0.attn.proj.bias', 'decoder_pos_embeds.0.0.weight', 'decoder_pos_embeds.0.0.bias', 'decoder_pos_embeds.0.2.weight', 'decoder_pos_embeds.0.2.bias', 'decoder_pos_embeds.1.0.weight', 'decoder_pos_embeds.1.0.bias', 'decoder_pos_embeds.1.2.weight', 'decoder_pos_embeds.1.2.bias', 'token_prop.0.fuse.net.0.weight', 'token_prop.0.fuse.net.0.bias', 'token_prop.0.fuse.net.1.weight', 'token_prop.0.fuse.net.1.bias', 'token_prop.0.fuse.net.1.running_mean', 'token_prop.0.fuse.net.1.running_var', 'token_prop.0.fuse.net.1.num_batches_tracked', 'token_prop.0.extraction.operation.0.net1.0.weight', 'token_prop.0.extraction.operation.0.net1.0.bias', 'token_prop.0.extraction.operation.0.net1.1.weight', 'token_prop.0.extraction.operation.0.net1.1.bias', 'token_prop.0.extraction.operation.0.net1.1.running_mean', 'token_prop.0.extraction.operation.0.net1.1.running_var', 'token_prop.0.extraction.operation.0.net1.1.num_batches_tracked', 'token_prop.0.extraction.operation.0.net2.0.weight', 'token_prop.0.extraction.operation.0.net2.0.bias', 'token_prop.0.extraction.operation.0.net2.1.weight', 'token_prop.0.extraction.operation.0.net2.1.bias', 'token_prop.0.extraction.operation.0.net2.1.running_mean', 'token_prop.0.extraction.operation.0.net2.1.running_var', 'token_prop.0.extraction.operation.0.net2.1.num_batches_tracked', 'decoder_norm.weight', 'decoder_norm.bias', 'rec_head.weight', 'rec_head.bias', 'h_encoder.encoder_norms.0.weight', 'h_encoder.encoder_norms.0.bias', 'h_encoder.encoder_norms.1.weight', 'h_encoder.encoder_norms.1.bias', 'h_encoder.encoder_norms.2.weight', 'h_encoder.encoder_norms.2.bias']
+[PointM2AE] Successful Loading the ckpt from /home/said/Desktop/eng app ai/final_MS_DGCNN____Multi_Scale_Dynamic_Graph_Convolution_with_Scale_Dependent_Normalization_for_Robust_LiDAR_Tree_Species_Classification/abalation stduies msdgcnn2/models/pointm2ae/pretrained_m2ae.pth
+INFO:utils.experiment_utils:Reusing fold 3: f282dc9d9dc9, OA=92.03
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 0.0, 'coordinate_unit': None, 'outlier_rate': 0.0}: OA=92.03 (clean 92.03)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 0.5, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=92.03 (clean 92.03)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 1.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=92.03 (clean 92.03)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 2.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=91.30 (clean 92.03)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 5.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=91.30 (clean 92.03)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 10.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=91.30 (clean 92.03)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 20.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=89.86 (clean 92.03)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 30.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=89.86 (clean 92.03)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 50.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=92.03 (clean 92.03)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 75.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=88.41 (clean 92.03)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 100.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=89.13 (clean 92.03)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 150.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=85.51 (clean 92.03)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 300.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=72.46 (clean 92.03)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 500.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=60.87 (clean 92.03)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 3 val
+INFO:utils.experiment_utils:Fold 3 {'retention': 1.0, 'noise_sigma_mm': 1000.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=34.78 (clean 92.03)
+INFO:__main__:Noise (clean training): pointm2ae, fold 4
+INFO:utils.experiment_utils:Loaded 553 samples for fold 4 train
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+[PointM2AE] Loaded 231/293 parameter groups (82.94% of checkpoint parameters)
+missing_keys: ['norm.weight', 'norm.bias', 'cls_head_finetune.0.weight', 'cls_head_finetune.0.bias', 'cls_head_finetune.1.weight', 'cls_head_finetune.1.bias', 'cls_head_finetune.1.running_mean', 'cls_head_finetune.1.running_var', 'cls_head_finetune.4.weight', 'cls_head_finetune.4.bias', 'cls_head_finetune.5.weight', 'cls_head_finetune.5.bias', 'cls_head_finetune.5.running_mean', 'cls_head_finetune.5.running_var', 'cls_head_finetune.8.weight', 'cls_head_finetune.8.bias']
+unexpected_keys: ['mask_token', 'h_decoder.0.blocks.0.norm1.weight', 'h_decoder.0.blocks.0.norm1.bias', 'h_decoder.0.blocks.0.norm2.weight', 'h_decoder.0.blocks.0.norm2.bias', 'h_decoder.0.blocks.0.mlp.fc1.weight', 'h_decoder.0.blocks.0.mlp.fc1.bias', 'h_decoder.0.blocks.0.mlp.fc2.weight', 'h_decoder.0.blocks.0.mlp.fc2.bias', 'h_decoder.0.blocks.0.attn.qkv.weight', 'h_decoder.0.blocks.0.attn.proj.weight', 'h_decoder.0.blocks.0.attn.proj.bias', 'h_decoder.1.blocks.0.norm1.weight', 'h_decoder.1.blocks.0.norm1.bias', 'h_decoder.1.blocks.0.norm2.weight', 'h_decoder.1.blocks.0.norm2.bias', 'h_decoder.1.blocks.0.mlp.fc1.weight', 'h_decoder.1.blocks.0.mlp.fc1.bias', 'h_decoder.1.blocks.0.mlp.fc2.weight', 'h_decoder.1.blocks.0.mlp.fc2.bias', 'h_decoder.1.blocks.0.attn.qkv.weight', 'h_decoder.1.blocks.0.attn.proj.weight', 'h_decoder.1.blocks.0.attn.proj.bias', 'decoder_pos_embeds.0.0.weight', 'decoder_pos_embeds.0.0.bias', 'decoder_pos_embeds.0.2.weight', 'decoder_pos_embeds.0.2.bias', 'decoder_pos_embeds.1.0.weight', 'decoder_pos_embeds.1.0.bias', 'decoder_pos_embeds.1.2.weight', 'decoder_pos_embeds.1.2.bias', 'token_prop.0.fuse.net.0.weight', 'token_prop.0.fuse.net.0.bias', 'token_prop.0.fuse.net.1.weight', 'token_prop.0.fuse.net.1.bias', 'token_prop.0.fuse.net.1.running_mean', 'token_prop.0.fuse.net.1.running_var', 'token_prop.0.fuse.net.1.num_batches_tracked', 'token_prop.0.extraction.operation.0.net1.0.weight', 'token_prop.0.extraction.operation.0.net1.0.bias', 'token_prop.0.extraction.operation.0.net1.1.weight', 'token_prop.0.extraction.operation.0.net1.1.bias', 'token_prop.0.extraction.operation.0.net1.1.running_mean', 'token_prop.0.extraction.operation.0.net1.1.running_var', 'token_prop.0.extraction.operation.0.net1.1.num_batches_tracked', 'token_prop.0.extraction.operation.0.net2.0.weight', 'token_prop.0.extraction.operation.0.net2.0.bias', 'token_prop.0.extraction.operation.0.net2.1.weight', 'token_prop.0.extraction.operation.0.net2.1.bias', 'token_prop.0.extraction.operation.0.net2.1.running_mean', 'token_prop.0.extraction.operation.0.net2.1.running_var', 'token_prop.0.extraction.operation.0.net2.1.num_batches_tracked', 'decoder_norm.weight', 'decoder_norm.bias', 'rec_head.weight', 'rec_head.bias', 'h_encoder.encoder_norms.0.weight', 'h_encoder.encoder_norms.0.bias', 'h_encoder.encoder_norms.1.weight', 'h_encoder.encoder_norms.1.bias', 'h_encoder.encoder_norms.2.weight', 'h_encoder.encoder_norms.2.bias']
+[PointM2AE] Successful Loading the ckpt from /home/said/Desktop/eng app ai/final_MS_DGCNN____Multi_Scale_Dynamic_Graph_Convolution_with_Scale_Dependent_Normalization_for_Robust_LiDAR_Tree_Species_Classification/abalation stduies msdgcnn2/models/pointm2ae/pretrained_m2ae.pth
+INFO:utils.experiment_utils:Reusing fold 4: 46c8fa4016ed, OA=90.58
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 0.0, 'coordinate_unit': None, 'outlier_rate': 0.0}: OA=90.58 (clean 90.58)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 0.5, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=90.58 (clean 90.58)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 1.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=90.58 (clean 90.58)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 2.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=90.58 (clean 90.58)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 5.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=90.58 (clean 90.58)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 10.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=91.30 (clean 90.58)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 20.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=89.13 (clean 90.58)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 30.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=89.13 (clean 90.58)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 50.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=90.58 (clean 90.58)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 75.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=92.03 (clean 90.58)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 100.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=90.58 (clean 90.58)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 150.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=86.23 (clean 90.58)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 300.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=65.94 (clean 90.58)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 500.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=50.00 (clean 90.58)
+INFO:utils.experiment_utils:Loaded 138 samples for fold 4 val
+INFO:utils.experiment_utils:Fold 4 {'retention': 1.0, 'noise_sigma_mm': 1000.0, 'coordinate_unit': 'm', 'outlier_rate': 0.0}: OA=33.33 (clean 90.58)
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val
+INFO:utils.experiment_utils:Loaded 139 samples for fold 0 val

@@ -2,7 +2,19 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 from timm.models.layers import DropPath
-from knn_cuda import KNN
+try:
+    from knn_cuda import KNN
+except ImportError:
+    class KNN(nn.Module):
+        """Pure-PyTorch replacement for knn_cuda.KNN (transpose_mode=True): k nearest, ascending."""
+        def __init__(self, k, transpose_mode=True):
+            super().__init__()
+            self.k = k
+
+        def forward(self, ref, query):
+            dist = torch.cdist(query, ref)  # B x G x N
+            dist, idx = dist.topk(self.k, dim=-1, largest=False, sorted=True)
+            return dist, idx
 from pointnet2_ops import pointnet2_utils
 
 

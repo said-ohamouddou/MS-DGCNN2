@@ -19,6 +19,7 @@ class AblationConfig:
     fusion_type: str = 'concat_conv'  # 'concat_conv', 'concat_only', 'add', 'attention', 'gated', 'bilinear', 'se_fusion'
     branch_feature_mode: str = 'full'  # 'full' or 'normalized_only'
     local_use_normalized: bool = False  # Whether to use normalized features in local scale (Scale 1)
+    k_second: Optional[int] = None  # Single-scale matched DGCNN: second EdgeConv only
     
     def __post_init__(self):
         if self.k_scales is None:
@@ -267,6 +268,7 @@ class MS_DGCNN2_Ablation(nn.Module):
         self.k_local = k_scales[0]
         self.k_branch = k_scales[1] if len(k_scales) > 1 else k_scales[0]
         self.k_global = k_scales[2] if len(k_scales) > 2 else self.k_branch
+        self.k_second = config.k_second or self.k_global
         
         self.use_multiscale = config.use_multiscale
         self.use_normalized_features = config.use_normalized_features
@@ -417,7 +419,7 @@ class MS_DGCNN2_Ablation(nn.Module):
             x1 = x_local.max(dim=-1, keepdim=False)[0]
         
         # EdgeConv layers
-        x = get_graph_feature(x1, k=self.k_global)
+        x = get_graph_feature(x1, k=self.k_second)
         x = self.conv2(x)
         x2 = x.max(dim=-1, keepdim=False)[0]
         
@@ -434,7 +436,7 @@ class MS_DGCNN2_Ablation(nn.Module):
         
         # Global feature
         x = self.conv5(x)
-        x1_global = F.adaptive_max_pool1d(x, 1).view(batch_size, -1)
+        x1_global = x.max(dim=-1)[0].view(batch_size, -1)  # max over points; deterministic backward on CUDA
         x2_global = F.adaptive_avg_pool1d(x, 1).view(batch_size, -1)
         x = torch.cat((x1_global, x2_global), 1)
         
@@ -521,7 +523,7 @@ class MS_DGCNN2_Ablation(nn.Module):
         intermediates['x1'] = x1  # [B, 64 or 128, N] (fused)
         
         # EdgeConv layers
-        x = get_graph_feature(x1, k=self.k_global)
+        x = get_graph_feature(x1, k=self.k_second)
         x = self.conv2(x)
         x2 = x.max(dim=-1, keepdim=False)[0]
         intermediates['x2'] = x2  # [B, 64, N]
@@ -541,7 +543,7 @@ class MS_DGCNN2_Ablation(nn.Module):
         
         # Global feature
         x = self.conv5(x)
-        x1_global = F.adaptive_max_pool1d(x, 1).view(batch_size, -1)
+        x1_global = x.max(dim=-1)[0].view(batch_size, -1)  # max over points; deterministic backward on CUDA
         x2_global = F.adaptive_avg_pool1d(x, 1).view(batch_size, -1)
         x = torch.cat((x1_global, x2_global), 1)
         
@@ -559,7 +561,8 @@ def create_model(
     emb_dims: int = 1024,
     dropout: float = 0.5,
     branch_feature_mode: str = 'full',
-    local_use_normalized: bool = False
+    local_use_normalized: bool = False,
+    k_second: Optional[int] = None
 ) -> MS_DGCNN2_Ablation:
     """Factory function to create ablation model variants.
     
@@ -579,6 +582,7 @@ def create_model(
         use_normalized_features=use_normalized_features,
         fusion_type=fusion_type,
         branch_feature_mode=branch_feature_mode,
-        local_use_normalized=local_use_normalized
+        local_use_normalized=local_use_normalized,
+        k_second=k_second
     )
     return MS_DGCNN2_Ablation(config)

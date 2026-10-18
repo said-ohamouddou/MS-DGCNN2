@@ -1,0 +1,3457 @@
+[
+  {
+    "index": 0,
+    "path": "data/STPCTLC/Buche/141.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 1,
+    "path": "data/STPCTLC/Buche/192.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 2,
+    "path": "data/STPCTLC/Buche/268.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 3,
+    "path": "data/STPCTLC/Buche/107.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 4,
+    "path": "data/STPCTLC/Buche/269.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 5,
+    "path": "data/STPCTLC/Buche/Jerome_Bu89_HEW40.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 6,
+    "path": "data/STPCTLC/Buche/180.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 7,
+    "path": "data/STPCTLC/Buche/241.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 8,
+    "path": "data/STPCTLC/Buche/Jerome_Bu1_HEW29.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 9,
+    "path": "data/STPCTLC/Buche/121.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 10,
+    "path": "data/STPCTLC/Buche/Jerome_Bu35_AEW22.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 11,
+    "path": "data/STPCTLC/Buche/28.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 12,
+    "path": "data/STPCTLC/Buche/Jerome_Bu35_SEW36.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 13,
+    "path": "data/STPCTLC/Buche/201.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 14,
+    "path": "data/STPCTLC/Buche/110.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 15,
+    "path": "data/STPCTLC/Buche/270.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 16,
+    "path": "data/STPCTLC/Buche/133.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 17,
+    "path": "data/STPCTLC/Buche/Jerome_Bu74_AEW47.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 18,
+    "path": "data/STPCTLC/Buche/23.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 19,
+    "path": "data/STPCTLC/Buche/Bu2.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 20,
+    "path": "data/STPCTLC/Buche/167.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 21,
+    "path": "data/STPCTLC/Buche/Jerome_Bu28_AEW6.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 22,
+    "path": "data/STPCTLC/Buche/188.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 23,
+    "path": "data/STPCTLC/Buche/130.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 24,
+    "path": "data/STPCTLC/Buche/109.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 25,
+    "path": "data/STPCTLC/Buche/254.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 26,
+    "path": "data/STPCTLC/Buche/242.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 27,
+    "path": "data/STPCTLC/Buche/Jerome_Bu89_SEW36.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 28,
+    "path": "data/STPCTLC/Buche/Jerome_Bu95_SEW36.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 29,
+    "path": "data/STPCTLC/Buche/Jerome_Bu32_HEW40.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 30,
+    "path": "data/STPCTLC/Buche/Jerome_Bu67_SEW36.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 31,
+    "path": "data/STPCTLC/Buche/Jerome_Bu7_AEW29.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 32,
+    "path": "data/STPCTLC/Buche/191.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 33,
+    "path": "data/STPCTLC/Buche/Jerome_Bu67_HEW21.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 34,
+    "path": "data/STPCTLC/Buche/41.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 35,
+    "path": "data/STPCTLC/Buche/40.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 36,
+    "path": "data/STPCTLC/Buche/Jerome_Bu1_AEW22.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 37,
+    "path": "data/STPCTLC/Buche/216.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 38,
+    "path": "data/STPCTLC/Buche/17.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 39,
+    "path": "data/STPCTLC/Buche/256.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 40,
+    "path": "data/STPCTLC/Buche/146.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 41,
+    "path": "data/STPCTLC/Buche/Jerome_Bu89_HEW29.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 42,
+    "path": "data/STPCTLC/Buche/172.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 43,
+    "path": "data/STPCTLC/Buche/239.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 44,
+    "path": "data/STPCTLC/Buche/Jerome_Bu35_SEW7.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 45,
+    "path": "data/STPCTLC/Buche/183.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 46,
+    "path": "data/STPCTLC/Buche/267.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 47,
+    "path": "data/STPCTLC/Buche/Jerome_Bu1_AEW6.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 48,
+    "path": "data/STPCTLC/Buche/208.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 49,
+    "path": "data/STPCTLC/Buche/57.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 50,
+    "path": "data/STPCTLC/Buche/Bu5.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 51,
+    "path": "data/STPCTLC/Buche/3.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 52,
+    "path": "data/STPCTLC/Buche/Jerome_Bu35a_AEW46.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 53,
+    "path": "data/STPCTLC/Buche/Jerome_Bu28_SEW7.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 54,
+    "path": "data/STPCTLC/Buche/Jerome_Bu60_HEW29.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 55,
+    "path": "data/STPCTLC/Buche/44.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 56,
+    "path": "data/STPCTLC/Buche/197.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 57,
+    "path": "data/STPCTLC/Buche/255.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 58,
+    "path": "data/STPCTLC/Buche/185.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 59,
+    "path": "data/STPCTLC/Buche/Jerome_Bu32_SEW8.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 60,
+    "path": "data/STPCTLC/Buche/46.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 61,
+    "path": "data/STPCTLC/Buche/Jerome_Bu95_HEW21.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 62,
+    "path": "data/STPCTLC/Buche/124.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 63,
+    "path": "data/STPCTLC/Buche/Bu3.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 64,
+    "path": "data/STPCTLC/Buche/Jerome_Bu43_AEW46.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 65,
+    "path": "data/STPCTLC/Buche/271.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 66,
+    "path": "data/STPCTLC/Buche/Jerome_Bu5_SEW8.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 67,
+    "path": "data/STPCTLC/Buche/Jerome_Bu34_AEW22.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 68,
+    "path": "data/STPCTLC/Buche/Jerome_Bu41_SEW4.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 69,
+    "path": "data/STPCTLC/Buche/Jerome_Bu10_HEW29.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 70,
+    "path": "data/STPCTLC/Buche/284.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 71,
+    "path": "data/STPCTLC/Buche/Jerome_Bu45_HEW9.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 72,
+    "path": "data/STPCTLC/Buche/106.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 73,
+    "path": "data/STPCTLC/Buche/Jerome_Bu73_SEW36.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 74,
+    "path": "data/STPCTLC/Buche/Jerome_Bu57_AEW22.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 75,
+    "path": "data/STPCTLC/Buche/Jerome_Bu10_AEW46.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 76,
+    "path": "data/STPCTLC/Buche/262.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 77,
+    "path": "data/STPCTLC/Buche/Jerome_Bu71_SEW30.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 78,
+    "path": "data/STPCTLC/Buche/212.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 79,
+    "path": "data/STPCTLC/Buche/Jerome_Bu74_AEW22.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 80,
+    "path": "data/STPCTLC/Buche/266.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 81,
+    "path": "data/STPCTLC/Buche/258.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 82,
+    "path": "data/STPCTLC/Buche/Jerome_Bu57_SEW36.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 83,
+    "path": "data/STPCTLC/Buche/37.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 84,
+    "path": "data/STPCTLC/Buche/Jerome_Bu8_SEW36.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 85,
+    "path": "data/STPCTLC/Buche/Jerome_Bu24_HEW9.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 86,
+    "path": "data/STPCTLC/Buche/19.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 87,
+    "path": "data/STPCTLC/Buche/125.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 88,
+    "path": "data/STPCTLC/Buche/142.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 89,
+    "path": "data/STPCTLC/Buche/98.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 90,
+    "path": "data/STPCTLC/Buche/227.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 91,
+    "path": "data/STPCTLC/Buche/103.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 92,
+    "path": "data/STPCTLC/Buche/24.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 93,
+    "path": "data/STPCTLC/Buche/220.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 94,
+    "path": "data/STPCTLC/Buche/223.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 95,
+    "path": "data/STPCTLC/Buche/225.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 96,
+    "path": "data/STPCTLC/Buche/Jerome_Bu89_AEW22.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 97,
+    "path": "data/STPCTLC/Buche/Jerome_Bu21_HEW29.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 98,
+    "path": "data/STPCTLC/Buche/Jerome_Bu2_HEW9.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 99,
+    "path": "data/STPCTLC/Buche/Jerome_Bu4_AEW46.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 100,
+    "path": "data/STPCTLC/Buche/Jerome_Bu73_AEW22.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 101,
+    "path": "data/STPCTLC/Buche/Jerome_Bu42_SEW4.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 102,
+    "path": "data/STPCTLC/Buche/Jerome_Bu42_AEW6.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 103,
+    "path": "data/STPCTLC/Buche/Jerome_Bu34_AEW6.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 104,
+    "path": "data/STPCTLC/Buche/Jerome_Bu35_AEW34.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 105,
+    "path": "data/STPCTLC/Buche/273.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 106,
+    "path": "data/STPCTLC/Buche/Jerome_Bu7_SEW8.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 107,
+    "path": "data/STPCTLC/Buche/Jerome_Bu28_HEW29.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 108,
+    "path": "data/STPCTLC/Buche/91.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 109,
+    "path": "data/STPCTLC/Buche/Jerome_Bu14_HEW29.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 110,
+    "path": "data/STPCTLC/Buche/Jerome_Bu31_AEW46.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 111,
+    "path": "data/STPCTLC/Buche/226.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 112,
+    "path": "data/STPCTLC/Buche/Jerome_Bu43_SEW8.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 113,
+    "path": "data/STPCTLC/Buche/Jerome_Bu5_HEW21.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 114,
+    "path": "data/STPCTLC/Buche/145.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 115,
+    "path": "data/STPCTLC/Buche/Jerome_Bu10_AEW22.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 116,
+    "path": "data/STPCTLC/Buche/166.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 117,
+    "path": "data/STPCTLC/Buche/Jerome_Bu10_SEW36.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 118,
+    "path": "data/STPCTLC/Buche/43.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 119,
+    "path": "data/STPCTLC/Buche/Jerome_Bu60_SEW7.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 120,
+    "path": "data/STPCTLC/Buche/Jerome_Bu5_HEW9.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 121,
+    "path": "data/STPCTLC/Buche/18.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 122,
+    "path": "data/STPCTLC/Buche/193.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 123,
+    "path": "data/STPCTLC/Buche/Jerome_Bu32_HEW29.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 124,
+    "path": "data/STPCTLC/Buche/21.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 125,
+    "path": "data/STPCTLC/Buche/221.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 126,
+    "path": "data/STPCTLC/Buche/76.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 127,
+    "path": "data/STPCTLC/Buche/Bu45_HEW29.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 128,
+    "path": "data/STPCTLC/Buche/Jerome_Bu7_HEW29.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 129,
+    "path": "data/STPCTLC/Buche/202.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 130,
+    "path": "data/STPCTLC/Buche/Jerome_Bu57_AEW6.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 131,
+    "path": "data/STPCTLC/Buche/Jerome_Bu73_SEW7.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 132,
+    "path": "data/STPCTLC/Buche/120.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 133,
+    "path": "data/STPCTLC/Buche/Jerome_Bu4_AEW22.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 134,
+    "path": "data/STPCTLC/Buche/190.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 135,
+    "path": "data/STPCTLC/Buche/93.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 136,
+    "path": "data/STPCTLC/Buche/173.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 137,
+    "path": "data/STPCTLC/Buche/Bu6.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 138,
+    "path": "data/STPCTLC/Buche/42.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 139,
+    "path": "data/STPCTLC/Buche/Bu1.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 140,
+    "path": "data/STPCTLC/Buche/36.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 141,
+    "path": "data/STPCTLC/Buche/Jerome_Bu4_HEW7.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 142,
+    "path": "data/STPCTLC/Buche/Jerome_Bu57_SEW7.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 143,
+    "path": "data/STPCTLC/Buche/215.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 144,
+    "path": "data/STPCTLC/Buche/198.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 145,
+    "path": "data/STPCTLC/Buche/Jerome_Bu35b_AEW46.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 146,
+    "path": "data/STPCTLC/Buche/Jerome_Bu8_HEW21.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 147,
+    "path": "data/STPCTLC/Buche/Jerome_Bu95_HEW35.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 148,
+    "path": "data/STPCTLC/Buche/12.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 149,
+    "path": "data/STPCTLC/Buche/Jerome_Bu2_SEW4.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 150,
+    "path": "data/STPCTLC/Buche/Jerome_Bu19_SEW36.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 151,
+    "path": "data/STPCTLC/Buche/204.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 152,
+    "path": "data/STPCTLC/Buche/102.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 153,
+    "path": "data/STPCTLC/Buche/245.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 154,
+    "path": "data/STPCTLC/Buche/Jerome_Bu2_SEW8.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 155,
+    "path": "data/STPCTLC/Buche/Jerome_Bu73_HEW21.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 156,
+    "path": "data/STPCTLC/Buche/82.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 157,
+    "path": "data/STPCTLC/Buche/Jerome_Bu28_AEW22.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 158,
+    "path": "data/STPCTLC/Buche/200.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 159,
+    "path": "data/STPCTLC/Buche/203.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 160,
+    "path": "data/STPCTLC/Buche/20.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 161,
+    "path": "data/STPCTLC/Buche/Jerome_Bu5_SEW36.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 162,
+    "path": "data/STPCTLC/Buche/Jerome_Bu7_HEW9.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 163,
+    "path": "data/STPCTLC/Buche/147.xyz",
+    "class": "Buche"
+  },
+  {
+    "index": 164,
+    "path": "data/STPCTLC/Douglasie/Tree5_Interior.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 165,
+    "path": "data/STPCTLC/Douglasie/61_57.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 166,
+    "path": "data/STPCTLC/Douglasie/61_25.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 167,
+    "path": "data/STPCTLC/Douglasie/31_11.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 168,
+    "path": "data/STPCTLC/Douglasie/62_85.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 169,
+    "path": "data/STPCTLC/Douglasie/31_69.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 170,
+    "path": "data/STPCTLC/Douglasie/61_88.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 171,
+    "path": "data/STPCTLC/Douglasie/32_3.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 172,
+    "path": "data/STPCTLC/Douglasie/61_14.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 173,
+    "path": "data/STPCTLC/Douglasie/31_25.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 174,
+    "path": "data/STPCTLC/Douglasie/Tree2_Border.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 175,
+    "path": "data/STPCTLC/Douglasie/Tree1_Interior.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 176,
+    "path": "data/STPCTLC/Douglasie/61_84.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 177,
+    "path": "data/STPCTLC/Douglasie/Tree20_Interior.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 178,
+    "path": "data/STPCTLC/Douglasie/Tree3_Border.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 179,
+    "path": "data/STPCTLC/Douglasie/31_23.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 180,
+    "path": "data/STPCTLC/Douglasie/Tree4_Interior.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 181,
+    "path": "data/STPCTLC/Douglasie/61_35.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 182,
+    "path": "data/STPCTLC/Douglasie/31_38.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 183,
+    "path": "data/STPCTLC/Douglasie/31_54.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 184,
+    "path": "data/STPCTLC/Douglasie/Tree12_Border.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 185,
+    "path": "data/STPCTLC/Douglasie/Tree4_Border.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 186,
+    "path": "data/STPCTLC/Douglasie/32_36.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 187,
+    "path": "data/STPCTLC/Douglasie/61_90.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 188,
+    "path": "data/STPCTLC/Douglasie/61_49.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 189,
+    "path": "data/STPCTLC/Douglasie/61_32.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 190,
+    "path": "data/STPCTLC/Douglasie/32_79.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 191,
+    "path": "data/STPCTLC/Douglasie/61_24.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 192,
+    "path": "data/STPCTLC/Douglasie/Tree19_Interior.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 193,
+    "path": "data/STPCTLC/Douglasie/61_18.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 194,
+    "path": "data/STPCTLC/Douglasie/32_47.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 195,
+    "path": "data/STPCTLC/Douglasie/31_88.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 196,
+    "path": "data/STPCTLC/Douglasie/31_86.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 197,
+    "path": "data/STPCTLC/Douglasie/Tree12_Interior.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 198,
+    "path": "data/STPCTLC/Douglasie/61_56.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 199,
+    "path": "data/STPCTLC/Douglasie/61_45.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 200,
+    "path": "data/STPCTLC/Douglasie/61_12.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 201,
+    "path": "data/STPCTLC/Douglasie/61_34.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 202,
+    "path": "data/STPCTLC/Douglasie/61_98.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 203,
+    "path": "data/STPCTLC/Douglasie/61_3.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 204,
+    "path": "data/STPCTLC/Douglasie/61_64.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 205,
+    "path": "data/STPCTLC/Douglasie/61_17.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 206,
+    "path": "data/STPCTLC/Douglasie/31_44.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 207,
+    "path": "data/STPCTLC/Douglasie/31_34.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 208,
+    "path": "data/STPCTLC/Douglasie/31_26.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 209,
+    "path": "data/STPCTLC/Douglasie/31_52.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 210,
+    "path": "data/STPCTLC/Douglasie/Tree3_Interior.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 211,
+    "path": "data/STPCTLC/Douglasie/Tree16_Border.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 212,
+    "path": "data/STPCTLC/Douglasie/61_5.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 213,
+    "path": "data/STPCTLC/Douglasie/61_8.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 214,
+    "path": "data/STPCTLC/Douglasie/31_14.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 215,
+    "path": "data/STPCTLC/Douglasie/Tree10_Border.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 216,
+    "path": "data/STPCTLC/Douglasie/61_70.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 217,
+    "path": "data/STPCTLC/Douglasie/31_79.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 218,
+    "path": "data/STPCTLC/Douglasie/31_80.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 219,
+    "path": "data/STPCTLC/Douglasie/Tree11_Border.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 220,
+    "path": "data/STPCTLC/Douglasie/61_33.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 221,
+    "path": "data/STPCTLC/Douglasie/32_34.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 222,
+    "path": "data/STPCTLC/Douglasie/Tree11_Interior.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 223,
+    "path": "data/STPCTLC/Douglasie/61_54.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 224,
+    "path": "data/STPCTLC/Douglasie/Tree18_Border.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 225,
+    "path": "data/STPCTLC/Douglasie/31_45.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 226,
+    "path": "data/STPCTLC/Douglasie/61_9.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 227,
+    "path": "data/STPCTLC/Douglasie/31_87.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 228,
+    "path": "data/STPCTLC/Douglasie/Tree6_Border.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 229,
+    "path": "data/STPCTLC/Douglasie/62_104.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 230,
+    "path": "data/STPCTLC/Douglasie/32_37.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 231,
+    "path": "data/STPCTLC/Douglasie/62_146.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 232,
+    "path": "data/STPCTLC/Douglasie/31_78.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 233,
+    "path": "data/STPCTLC/Douglasie/31_59.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 234,
+    "path": "data/STPCTLC/Douglasie/61_6.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 235,
+    "path": "data/STPCTLC/Douglasie/31_68.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 236,
+    "path": "data/STPCTLC/Douglasie/31_20.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 237,
+    "path": "data/STPCTLC/Douglasie/Tree17_Interior.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 238,
+    "path": "data/STPCTLC/Douglasie/Tree2_Interior.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 239,
+    "path": "data/STPCTLC/Douglasie/61_42.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 240,
+    "path": "data/STPCTLC/Douglasie/32_69.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 241,
+    "path": "data/STPCTLC/Douglasie/31_66.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 242,
+    "path": "data/STPCTLC/Douglasie/Tree8_Border.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 243,
+    "path": "data/STPCTLC/Douglasie/61_11.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 244,
+    "path": "data/STPCTLC/Douglasie/61_10.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 245,
+    "path": "data/STPCTLC/Douglasie/Tree10_Interior.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 246,
+    "path": "data/STPCTLC/Douglasie/Tree13_Interior.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 247,
+    "path": "data/STPCTLC/Douglasie/61_28.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 248,
+    "path": "data/STPCTLC/Douglasie/61_22.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 249,
+    "path": "data/STPCTLC/Douglasie/31_15.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 250,
+    "path": "data/STPCTLC/Douglasie/62_33_1.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 251,
+    "path": "data/STPCTLC/Douglasie/61_2.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 252,
+    "path": "data/STPCTLC/Douglasie/61_65.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 253,
+    "path": "data/STPCTLC/Douglasie/61_29.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 254,
+    "path": "data/STPCTLC/Douglasie/62_115.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 255,
+    "path": "data/STPCTLC/Douglasie/31_46.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 256,
+    "path": "data/STPCTLC/Douglasie/61_97.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 257,
+    "path": "data/STPCTLC/Douglasie/31_65.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 258,
+    "path": "data/STPCTLC/Douglasie/62_37_15.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 259,
+    "path": "data/STPCTLC/Douglasie/31_48.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 260,
+    "path": "data/STPCTLC/Douglasie/31_82.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 261,
+    "path": "data/STPCTLC/Douglasie/Tree14_Border.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 262,
+    "path": "data/STPCTLC/Douglasie/31_89.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 263,
+    "path": "data/STPCTLC/Douglasie/62_31_1.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 264,
+    "path": "data/STPCTLC/Douglasie/Tree15_Interior.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 265,
+    "path": "data/STPCTLC/Douglasie/61_52.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 266,
+    "path": "data/STPCTLC/Douglasie/31_29.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 267,
+    "path": "data/STPCTLC/Douglasie/31_81.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 268,
+    "path": "data/STPCTLC/Douglasie/61_60.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 269,
+    "path": "data/STPCTLC/Douglasie/31_13.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 270,
+    "path": "data/STPCTLC/Douglasie/61_80.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 271,
+    "path": "data/STPCTLC/Douglasie/Tree9_Border.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 272,
+    "path": "data/STPCTLC/Douglasie/31_64.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 273,
+    "path": "data/STPCTLC/Douglasie/61_68.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 274,
+    "path": "data/STPCTLC/Douglasie/31_71.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 275,
+    "path": "data/STPCTLC/Douglasie/31_40.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 276,
+    "path": "data/STPCTLC/Douglasie/Tree9_Interior.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 277,
+    "path": "data/STPCTLC/Douglasie/32_84.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 278,
+    "path": "data/STPCTLC/Douglasie/31_85.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 279,
+    "path": "data/STPCTLC/Douglasie/61_66.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 280,
+    "path": "data/STPCTLC/Douglasie/31_12.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 281,
+    "path": "data/STPCTLC/Douglasie/62_110.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 282,
+    "path": "data/STPCTLC/Douglasie/31_56.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 283,
+    "path": "data/STPCTLC/Douglasie/31_61.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 284,
+    "path": "data/STPCTLC/Douglasie/62_153.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 285,
+    "path": "data/STPCTLC/Douglasie/62_130.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 286,
+    "path": "data/STPCTLC/Douglasie/31_92.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 287,
+    "path": "data/STPCTLC/Douglasie/61_69.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 288,
+    "path": "data/STPCTLC/Douglasie/63_60.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 289,
+    "path": "data/STPCTLC/Douglasie/61_23.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 290,
+    "path": "data/STPCTLC/Douglasie/61_19.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 291,
+    "path": "data/STPCTLC/Douglasie/61_20.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 292,
+    "path": "data/STPCTLC/Douglasie/Tree18_Interior.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 293,
+    "path": "data/STPCTLC/Douglasie/Tree15_Border.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 294,
+    "path": "data/STPCTLC/Douglasie/61_16.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 295,
+    "path": "data/STPCTLC/Douglasie/31_84.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 296,
+    "path": "data/STPCTLC/Douglasie/Tree13_Border.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 297,
+    "path": "data/STPCTLC/Douglasie/61_85.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 298,
+    "path": "data/STPCTLC/Douglasie/Tree8_Interior.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 299,
+    "path": "data/STPCTLC/Douglasie/61_30.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 300,
+    "path": "data/STPCTLC/Douglasie/Tree17_Border.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 301,
+    "path": "data/STPCTLC/Douglasie/31_70.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 302,
+    "path": "data/STPCTLC/Douglasie/61_62.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 303,
+    "path": "data/STPCTLC/Douglasie/61_46.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 304,
+    "path": "data/STPCTLC/Douglasie/31_30.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 305,
+    "path": "data/STPCTLC/Douglasie/Tree5_Border.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 306,
+    "path": "data/STPCTLC/Douglasie/63_3.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 307,
+    "path": "data/STPCTLC/Douglasie/61_96.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 308,
+    "path": "data/STPCTLC/Douglasie/61_63.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 309,
+    "path": "data/STPCTLC/Douglasie/31_60.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 310,
+    "path": "data/STPCTLC/Douglasie/31_35.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 311,
+    "path": "data/STPCTLC/Douglasie/32_45.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 312,
+    "path": "data/STPCTLC/Douglasie/Tree6_Interior.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 313,
+    "path": "data/STPCTLC/Douglasie/31_32.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 314,
+    "path": "data/STPCTLC/Douglasie/Tree14_Interior.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 315,
+    "path": "data/STPCTLC/Douglasie/31_53.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 316,
+    "path": "data/STPCTLC/Douglasie/61_40.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 317,
+    "path": "data/STPCTLC/Douglasie/31_83.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 318,
+    "path": "data/STPCTLC/Douglasie/61_26.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 319,
+    "path": "data/STPCTLC/Douglasie/64_71.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 320,
+    "path": "data/STPCTLC/Douglasie/31_74.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 321,
+    "path": "data/STPCTLC/Douglasie/61_71.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 322,
+    "path": "data/STPCTLC/Douglasie/61_37.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 323,
+    "path": "data/STPCTLC/Douglasie/61_31.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 324,
+    "path": "data/STPCTLC/Douglasie/61_99.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 325,
+    "path": "data/STPCTLC/Douglasie/61_83.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 326,
+    "path": "data/STPCTLC/Douglasie/31_3.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 327,
+    "path": "data/STPCTLC/Douglasie/31_72.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 328,
+    "path": "data/STPCTLC/Douglasie/Tree16_Interior.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 329,
+    "path": "data/STPCTLC/Douglasie/Tree7_Interior.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 330,
+    "path": "data/STPCTLC/Douglasie/Tree1_Border.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 331,
+    "path": "data/STPCTLC/Douglasie/61_41.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 332,
+    "path": "data/STPCTLC/Douglasie/61_72.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 333,
+    "path": "data/STPCTLC/Douglasie/31_31.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 334,
+    "path": "data/STPCTLC/Douglasie/61_15.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 335,
+    "path": "data/STPCTLC/Douglasie/31_21.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 336,
+    "path": "data/STPCTLC/Douglasie/31_41.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 337,
+    "path": "data/STPCTLC/Douglasie/61_67.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 338,
+    "path": "data/STPCTLC/Douglasie/31_73.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 339,
+    "path": "data/STPCTLC/Douglasie/62_93.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 340,
+    "path": "data/STPCTLC/Douglasie/61_73.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 341,
+    "path": "data/STPCTLC/Douglasie/62_144.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 342,
+    "path": "data/STPCTLC/Douglasie/31_62.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 343,
+    "path": "data/STPCTLC/Douglasie/31_27.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 344,
+    "path": "data/STPCTLC/Douglasie/Tree7_Border.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 345,
+    "path": "data/STPCTLC/Douglasie/62_89.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 346,
+    "path": "data/STPCTLC/Douglasie/62_70.xyz",
+    "class": "Douglasie"
+  },
+  {
+    "index": 347,
+    "path": "data/STPCTLC/Eiche/28.xyz",
+    "class": "Eiche"
+  },
+  {
+    "index": 348,
+    "path": "data/STPCTLC/Eiche/16.xyz",
+    "class": "Eiche"
+  },
+  {
+    "index": 349,
+    "path": "data/STPCTLC/Eiche/14.xyz",
+    "class": "Eiche"
+  },
+  {
+    "index": 350,
+    "path": "data/STPCTLC/Eiche/27.xyz",
+    "class": "Eiche"
+  },
+  {
+    "index": 351,
+    "path": "data/STPCTLC/Eiche/2.xyz",
+    "class": "Eiche"
+  },
+  {
+    "index": 352,
+    "path": "data/STPCTLC/Eiche/10.xyz",
+    "class": "Eiche"
+  },
+  {
+    "index": 353,
+    "path": "data/STPCTLC/Eiche/29.xyz",
+    "class": "Eiche"
+  },
+  {
+    "index": 354,
+    "path": "data/STPCTLC/Eiche/26.xyz",
+    "class": "Eiche"
+  },
+  {
+    "index": 355,
+    "path": "data/STPCTLC/Eiche/3.xyz",
+    "class": "Eiche"
+  },
+  {
+    "index": 356,
+    "path": "data/STPCTLC/Eiche/22.xyz",
+    "class": "Eiche"
+  },
+  {
+    "index": 357,
+    "path": "data/STPCTLC/Eiche/30.xyz",
+    "class": "Eiche"
+  },
+  {
+    "index": 358,
+    "path": "data/STPCTLC/Eiche/15.xyz",
+    "class": "Eiche"
+  },
+  {
+    "index": 359,
+    "path": "data/STPCTLC/Eiche/11.xyz",
+    "class": "Eiche"
+  },
+  {
+    "index": 360,
+    "path": "data/STPCTLC/Eiche/19.xyz",
+    "class": "Eiche"
+  },
+  {
+    "index": 361,
+    "path": "data/STPCTLC/Eiche/6.xyz",
+    "class": "Eiche"
+  },
+  {
+    "index": 362,
+    "path": "data/STPCTLC/Eiche/24.xyz",
+    "class": "Eiche"
+  },
+  {
+    "index": 363,
+    "path": "data/STPCTLC/Eiche/18.xyz",
+    "class": "Eiche"
+  },
+  {
+    "index": 364,
+    "path": "data/STPCTLC/Eiche/21.xyz",
+    "class": "Eiche"
+  },
+  {
+    "index": 365,
+    "path": "data/STPCTLC/Eiche/31.xyz",
+    "class": "Eiche"
+  },
+  {
+    "index": 366,
+    "path": "data/STPCTLC/Eiche/5.xyz",
+    "class": "Eiche"
+  },
+  {
+    "index": 367,
+    "path": "data/STPCTLC/Eiche/4.xyz",
+    "class": "Eiche"
+  },
+  {
+    "index": 368,
+    "path": "data/STPCTLC/Eiche/20.xyz",
+    "class": "Eiche"
+  },
+  {
+    "index": 369,
+    "path": "data/STPCTLC/Esche/196.xyz",
+    "class": "Esche"
+  },
+  {
+    "index": 370,
+    "path": "data/STPCTLC/Esche/184.xyz",
+    "class": "Esche"
+  },
+  {
+    "index": 371,
+    "path": "data/STPCTLC/Esche/Es4.xyz",
+    "class": "Esche"
+  },
+  {
+    "index": 372,
+    "path": "data/STPCTLC/Esche/95.xyz",
+    "class": "Esche"
+  },
+  {
+    "index": 373,
+    "path": "data/STPCTLC/Esche/Jerome_Es89_HEW7.xyz",
+    "class": "Esche"
+  },
+  {
+    "index": 374,
+    "path": "data/STPCTLC/Esche/186.xyz",
+    "class": "Esche"
+  },
+  {
+    "index": 375,
+    "path": "data/STPCTLC/Esche/Jerome_Es28_HEW7.xyz",
+    "class": "Esche"
+  },
+  {
+    "index": 376,
+    "path": "data/STPCTLC/Esche/38.xyz",
+    "class": "Esche"
+  },
+  {
+    "index": 377,
+    "path": "data/STPCTLC/Esche/123.xyz",
+    "class": "Esche"
+  },
+  {
+    "index": 378,
+    "path": "data/STPCTLC/Esche/228.xyz",
+    "class": "Esche"
+  },
+  {
+    "index": 379,
+    "path": "data/STPCTLC/Esche/Es1.xyz",
+    "class": "Esche"
+  },
+  {
+    "index": 380,
+    "path": "data/STPCTLC/Esche/E1.xyz",
+    "class": "Esche"
+  },
+  {
+    "index": 381,
+    "path": "data/STPCTLC/Esche/Jerome_Es28_HEW35.xyz",
+    "class": "Esche"
+  },
+  {
+    "index": 382,
+    "path": "data/STPCTLC/Esche/264.xyz",
+    "class": "Esche"
+  },
+  {
+    "index": 383,
+    "path": "data/STPCTLC/Esche/272.xyz",
+    "class": "Esche"
+  },
+  {
+    "index": 384,
+    "path": "data/STPCTLC/Esche/181.xyz",
+    "class": "Esche"
+  },
+  {
+    "index": 385,
+    "path": "data/STPCTLC/Esche/22.xyz",
+    "class": "Esche"
+  },
+  {
+    "index": 386,
+    "path": "data/STPCTLC/Esche/Jerome_Es19_HEW7.xyz",
+    "class": "Esche"
+  },
+  {
+    "index": 387,
+    "path": "data/STPCTLC/Esche/189.xyz",
+    "class": "Esche"
+  },
+  {
+    "index": 388,
+    "path": "data/STPCTLC/Esche/238.xyz",
+    "class": "Esche"
+  },
+  {
+    "index": 389,
+    "path": "data/STPCTLC/Esche/171.xyz",
+    "class": "Esche"
+  },
+  {
+    "index": 390,
+    "path": "data/STPCTLC/Esche/Es2.xyz",
+    "class": "Esche"
+  },
+  {
+    "index": 391,
+    "path": "data/STPCTLC/Esche/199.xyz",
+    "class": "Esche"
+  },
+  {
+    "index": 392,
+    "path": "data/STPCTLC/Esche/159.xyz",
+    "class": "Esche"
+  },
+  {
+    "index": 393,
+    "path": "data/STPCTLC/Esche/240.xyz",
+    "class": "Esche"
+  },
+  {
+    "index": 394,
+    "path": "data/STPCTLC/Esche/149.xyz",
+    "class": "Esche"
+  },
+  {
+    "index": 395,
+    "path": "data/STPCTLC/Esche/Jerome_Es67_HEW35.xyz",
+    "class": "Esche"
+  },
+  {
+    "index": 396,
+    "path": "data/STPCTLC/Esche/45.xyz",
+    "class": "Esche"
+  },
+  {
+    "index": 397,
+    "path": "data/STPCTLC/Esche/229.xyz",
+    "class": "Esche"
+  },
+  {
+    "index": 398,
+    "path": "data/STPCTLC/Esche/156.xyz",
+    "class": "Esche"
+  },
+  {
+    "index": 399,
+    "path": "data/STPCTLC/Esche/250.xyz",
+    "class": "Esche"
+  },
+  {
+    "index": 400,
+    "path": "data/STPCTLC/Esche/Es3.xyz",
+    "class": "Esche"
+  },
+  {
+    "index": 401,
+    "path": "data/STPCTLC/Esche/182.xyz",
+    "class": "Esche"
+  },
+  {
+    "index": 402,
+    "path": "data/STPCTLC/Esche/131.xyz",
+    "class": "Esche"
+  },
+  {
+    "index": 403,
+    "path": "data/STPCTLC/Esche/94.xyz",
+    "class": "Esche"
+  },
+  {
+    "index": 404,
+    "path": "data/STPCTLC/Esche/Es5.xyz",
+    "class": "Esche"
+  },
+  {
+    "index": 405,
+    "path": "data/STPCTLC/Esche/Jerome_Es32_HEW7.xyz",
+    "class": "Esche"
+  },
+  {
+    "index": 406,
+    "path": "data/STPCTLC/Esche/169.xyz",
+    "class": "Esche"
+  },
+  {
+    "index": 407,
+    "path": "data/STPCTLC/Esche/249.xyz",
+    "class": "Esche"
+  },
+  {
+    "index": 408,
+    "path": "data/STPCTLC/Fichte/35_12.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 409,
+    "path": "data/STPCTLC/Fichte/65_35.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 410,
+    "path": "data/STPCTLC/Fichte/Jerome_Fi41_AEW34.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 411,
+    "path": "data/STPCTLC/Fichte/35_80.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 412,
+    "path": "data/STPCTLC/Fichte/64_49.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 413,
+    "path": "data/STPCTLC/Fichte/34_16.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 414,
+    "path": "data/STPCTLC/Fichte/Jerome_Fi71_AEW46.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 415,
+    "path": "data/STPCTLC/Fichte/65_10.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 416,
+    "path": "data/STPCTLC/Fichte/65_11.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 417,
+    "path": "data/STPCTLC/Fichte/35_27.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 418,
+    "path": "data/STPCTLC/Fichte/65_51.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 419,
+    "path": "data/STPCTLC/Fichte/64_19.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 420,
+    "path": "data/STPCTLC/Fichte/65_40.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 421,
+    "path": "data/STPCTLC/Fichte/35_91.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 422,
+    "path": "data/STPCTLC/Fichte/65_25.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 423,
+    "path": "data/STPCTLC/Fichte/65_38.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 424,
+    "path": "data/STPCTLC/Fichte/65_24.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 425,
+    "path": "data/STPCTLC/Fichte/65_13.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 426,
+    "path": "data/STPCTLC/Fichte/34_9.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 427,
+    "path": "data/STPCTLC/Fichte/65_12.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 428,
+    "path": "data/STPCTLC/Fichte/65_71.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 429,
+    "path": "data/STPCTLC/Fichte/65_4.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 430,
+    "path": "data/STPCTLC/Fichte/35_78.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 431,
+    "path": "data/STPCTLC/Fichte/65_14.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 432,
+    "path": "data/STPCTLC/Fichte/65_67.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 433,
+    "path": "data/STPCTLC/Fichte/65_70.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 434,
+    "path": "data/STPCTLC/Fichte/65_27.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 435,
+    "path": "data/STPCTLC/Fichte/65_78.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 436,
+    "path": "data/STPCTLC/Fichte/Jerome_Fi31_AEW29.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 437,
+    "path": "data/STPCTLC/Fichte/35_97.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 438,
+    "path": "data/STPCTLC/Fichte/35_74.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 439,
+    "path": "data/STPCTLC/Fichte/35_82.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 440,
+    "path": "data/STPCTLC/Fichte/34_23.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 441,
+    "path": "data/STPCTLC/Fichte/64_14.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 442,
+    "path": "data/STPCTLC/Fichte/65_46.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 443,
+    "path": "data/STPCTLC/Fichte/65_56.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 444,
+    "path": "data/STPCTLC/Fichte/65_22.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 445,
+    "path": "data/STPCTLC/Fichte/Jerome_Fi42_AEW29.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 446,
+    "path": "data/STPCTLC/Fichte/35_89.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 447,
+    "path": "data/STPCTLC/Fichte/65_60.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 448,
+    "path": "data/STPCTLC/Fichte/35_49.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 449,
+    "path": "data/STPCTLC/Fichte/65_8.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 450,
+    "path": "data/STPCTLC/Fichte/34_10.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 451,
+    "path": "data/STPCTLC/Fichte/34_24.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 452,
+    "path": "data/STPCTLC/Fichte/64_78.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 453,
+    "path": "data/STPCTLC/Fichte/35_62.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 454,
+    "path": "data/STPCTLC/Fichte/Jerome_Fi5_AEW29.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 455,
+    "path": "data/STPCTLC/Fichte/65_23.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 456,
+    "path": "data/STPCTLC/Fichte/35_125.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 457,
+    "path": "data/STPCTLC/Fichte/64_50_2.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 458,
+    "path": "data/STPCTLC/Fichte/65_28.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 459,
+    "path": "data/STPCTLC/Fichte/64_7.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 460,
+    "path": "data/STPCTLC/Fichte/65_42.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 461,
+    "path": "data/STPCTLC/Fichte/64_45.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 462,
+    "path": "data/STPCTLC/Fichte/35_85.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 463,
+    "path": "data/STPCTLC/Fichte/65_65.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 464,
+    "path": "data/STPCTLC/Fichte/65_32.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 465,
+    "path": "data/STPCTLC/Fichte/35_93.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 466,
+    "path": "data/STPCTLC/Fichte/65_82.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 467,
+    "path": "data/STPCTLC/Fichte/65_39.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 468,
+    "path": "data/STPCTLC/Fichte/65_66.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 469,
+    "path": "data/STPCTLC/Fichte/65_59.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 470,
+    "path": "data/STPCTLC/Fichte/65_75.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 471,
+    "path": "data/STPCTLC/Fichte/35_71.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 472,
+    "path": "data/STPCTLC/Fichte/35_77.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 473,
+    "path": "data/STPCTLC/Fichte/35_10.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 474,
+    "path": "data/STPCTLC/Fichte/34_25.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 475,
+    "path": "data/STPCTLC/Fichte/65_2.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 476,
+    "path": "data/STPCTLC/Fichte/65_89.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 477,
+    "path": "data/STPCTLC/Fichte/65_15.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 478,
+    "path": "data/STPCTLC/Fichte/65_16.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 479,
+    "path": "data/STPCTLC/Fichte/65_5.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 480,
+    "path": "data/STPCTLC/Fichte/Jerome_Fi2_AEW34.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 481,
+    "path": "data/STPCTLC/Fichte/65_88.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 482,
+    "path": "data/STPCTLC/Fichte/65_77.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 483,
+    "path": "data/STPCTLC/Fichte/35_24.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 484,
+    "path": "data/STPCTLC/Fichte/65_73.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 485,
+    "path": "data/STPCTLC/Fichte/33_62.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 486,
+    "path": "data/STPCTLC/Fichte/64_68.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 487,
+    "path": "data/STPCTLC/Fichte/35_73.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 488,
+    "path": "data/STPCTLC/Fichte/35_2.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 489,
+    "path": "data/STPCTLC/Fichte/65_55.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 490,
+    "path": "data/STPCTLC/Fichte/35_81.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 491,
+    "path": "data/STPCTLC/Fichte/64_62.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 492,
+    "path": "data/STPCTLC/Fichte/34_46.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 493,
+    "path": "data/STPCTLC/Fichte/Jerome_Fi89_AEW47.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 494,
+    "path": "data/STPCTLC/Fichte/65_62.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 495,
+    "path": "data/STPCTLC/Fichte/65_26.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 496,
+    "path": "data/STPCTLC/Fichte/65_6.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 497,
+    "path": "data/STPCTLC/Fichte/35_7.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 498,
+    "path": "data/STPCTLC/Fichte/64_16.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 499,
+    "path": "data/STPCTLC/Fichte/35_25.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 500,
+    "path": "data/STPCTLC/Fichte/65_45.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 501,
+    "path": "data/STPCTLC/Fichte/35_87.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 502,
+    "path": "data/STPCTLC/Fichte/35_72.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 503,
+    "path": "data/STPCTLC/Fichte/65_37.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 504,
+    "path": "data/STPCTLC/Fichte/65_9.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 505,
+    "path": "data/STPCTLC/Fichte/64_6.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 506,
+    "path": "data/STPCTLC/Fichte/35_23.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 507,
+    "path": "data/STPCTLC/Fichte/34_26.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 508,
+    "path": "data/STPCTLC/Fichte/65_86.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 509,
+    "path": "data/STPCTLC/Fichte/Jerome_Fi43_AEW46.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 510,
+    "path": "data/STPCTLC/Fichte/Jerome_Fi40_AEW34.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 511,
+    "path": "data/STPCTLC/Fichte/35_22.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 512,
+    "path": "data/STPCTLC/Fichte/65_81.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 513,
+    "path": "data/STPCTLC/Fichte/35_51.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 514,
+    "path": "data/STPCTLC/Fichte/35_75.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 515,
+    "path": "data/STPCTLC/Fichte/35_69.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 516,
+    "path": "data/STPCTLC/Fichte/65_50.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 517,
+    "path": "data/STPCTLC/Fichte/Jerome_Fi32_AEW34.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 518,
+    "path": "data/STPCTLC/Fichte/Jerome_Fi74_AEW29.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 519,
+    "path": "data/STPCTLC/Fichte/Jerome_Fi5_AEW47.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 520,
+    "path": "data/STPCTLC/Fichte/65_44.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 521,
+    "path": "data/STPCTLC/Fichte/65_83.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 522,
+    "path": "data/STPCTLC/Fichte/35_19.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 523,
+    "path": "data/STPCTLC/Fichte/34_17.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 524,
+    "path": "data/STPCTLC/Fichte/35_31.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 525,
+    "path": "data/STPCTLC/Fichte/35_1.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 526,
+    "path": "data/STPCTLC/Fichte/35_79.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 527,
+    "path": "data/STPCTLC/Fichte/65_17.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 528,
+    "path": "data/STPCTLC/Fichte/35_76.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 529,
+    "path": "data/STPCTLC/Fichte/35_88.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 530,
+    "path": "data/STPCTLC/Fichte/65_36.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 531,
+    "path": "data/STPCTLC/Fichte/65_69.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 532,
+    "path": "data/STPCTLC/Fichte/65_68.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 533,
+    "path": "data/STPCTLC/Fichte/65_79.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 534,
+    "path": "data/STPCTLC/Fichte/65_48.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 535,
+    "path": "data/STPCTLC/Fichte/65_85.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 536,
+    "path": "data/STPCTLC/Fichte/Jerome_Fi57_AEW47.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 537,
+    "path": "data/STPCTLC/Fichte/65_84.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 538,
+    "path": "data/STPCTLC/Fichte/65_33.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 539,
+    "path": "data/STPCTLC/Fichte/35_32.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 540,
+    "path": "data/STPCTLC/Fichte/65_63.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 541,
+    "path": "data/STPCTLC/Fichte/64_67.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 542,
+    "path": "data/STPCTLC/Fichte/65_34.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 543,
+    "path": "data/STPCTLC/Fichte/65_80.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 544,
+    "path": "data/STPCTLC/Fichte/35_20.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 545,
+    "path": "data/STPCTLC/Fichte/35_60.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 546,
+    "path": "data/STPCTLC/Fichte/35_122.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 547,
+    "path": "data/STPCTLC/Fichte/64_11.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 548,
+    "path": "data/STPCTLC/Fichte/64_26.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 549,
+    "path": "data/STPCTLC/Fichte/65_52.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 550,
+    "path": "data/STPCTLC/Fichte/65_3.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 551,
+    "path": "data/STPCTLC/Fichte/64_43.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 552,
+    "path": "data/STPCTLC/Fichte/35_61.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 553,
+    "path": "data/STPCTLC/Fichte/35_68.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 554,
+    "path": "data/STPCTLC/Fichte/65_43.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 555,
+    "path": "data/STPCTLC/Fichte/35_83.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 556,
+    "path": "data/STPCTLC/Fichte/65_64.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 557,
+    "path": "data/STPCTLC/Fichte/35_90.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 558,
+    "path": "data/STPCTLC/Fichte/35_34.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 559,
+    "path": "data/STPCTLC/Fichte/Jerome_Fi10_AEW46.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 560,
+    "path": "data/STPCTLC/Fichte/Jerome_Fi32_AEW47.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 561,
+    "path": "data/STPCTLC/Fichte/Jerome_Fi42_AEW46.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 562,
+    "path": "data/STPCTLC/Fichte/65_61.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 563,
+    "path": "data/STPCTLC/Fichte/65_49.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 564,
+    "path": "data/STPCTLC/Fichte/35_48.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 565,
+    "path": "data/STPCTLC/Fichte/35_86.xyz",
+    "class": "Fichte"
+  },
+  {
+    "index": 566,
+    "path": "data/STPCTLC/Kiefer/65_7.xyz",
+    "class": "Kiefer"
+  },
+  {
+    "index": 567,
+    "path": "data/STPCTLC/Kiefer/65_53.xyz",
+    "class": "Kiefer"
+  },
+  {
+    "index": 568,
+    "path": "data/STPCTLC/Kiefer/Jerome_Ki60_SEW30.xyz",
+    "class": "Kiefer"
+  },
+  {
+    "index": 569,
+    "path": "data/STPCTLC/Kiefer/Jerome_Ki57b_SEW4.xyz",
+    "class": "Kiefer"
+  },
+  {
+    "index": 570,
+    "path": "data/STPCTLC/Kiefer/17.xyz",
+    "class": "Kiefer"
+  },
+  {
+    "index": 571,
+    "path": "data/STPCTLC/Kiefer/Jerome_Ki10_SEW4.xyz",
+    "class": "Kiefer"
+  },
+  {
+    "index": 572,
+    "path": "data/STPCTLC/Kiefer/Jerome_Ki5_SEW4.xyz",
+    "class": "Kiefer"
+  },
+  {
+    "index": 573,
+    "path": "data/STPCTLC/Kiefer/Jerome_Ki57a_SEW4.xyz",
+    "class": "Kiefer"
+  },
+  {
+    "index": 574,
+    "path": "data/STPCTLC/Kiefer/Jerome_Ki60_SEW4.xyz",
+    "class": "Kiefer"
+  },
+  {
+    "index": 575,
+    "path": "data/STPCTLC/Kiefer/65_57.xyz",
+    "class": "Kiefer"
+  },
+  {
+    "index": 576,
+    "path": "data/STPCTLC/Kiefer/Jerome_Ki54_SEW30.xyz",
+    "class": "Kiefer"
+  },
+  {
+    "index": 577,
+    "path": "data/STPCTLC/Kiefer/Jerome_Ki40c_SEW4.xyz",
+    "class": "Kiefer"
+  },
+  {
+    "index": 578,
+    "path": "data/STPCTLC/Kiefer/25.xyz",
+    "class": "Kiefer"
+  },
+  {
+    "index": 579,
+    "path": "data/STPCTLC/Kiefer/Jerome_Ki3_SEW30.xyz",
+    "class": "Kiefer"
+  },
+  {
+    "index": 580,
+    "path": "data/STPCTLC/Kiefer/Jerome_Ki40_SEW4.xyz",
+    "class": "Kiefer"
+  },
+  {
+    "index": 581,
+    "path": "data/STPCTLC/Kiefer/Jerome_Ki60a_SEW4.xyz",
+    "class": "Kiefer"
+  },
+  {
+    "index": 582,
+    "path": "data/STPCTLC/Kiefer/Jerome_Ki74_SEW4.xyz",
+    "class": "Kiefer"
+  },
+  {
+    "index": 583,
+    "path": "data/STPCTLC/Kiefer/Jerome_Ki2b_SEW4.xyz",
+    "class": "Kiefer"
+  },
+  {
+    "index": 584,
+    "path": "data/STPCTLC/Kiefer/1.xyz",
+    "class": "Kiefer"
+  },
+  {
+    "index": 585,
+    "path": "data/STPCTLC/Kiefer/Jerome_Ki7_SEW4.xyz",
+    "class": "Kiefer"
+  },
+  {
+    "index": 586,
+    "path": "data/STPCTLC/Kiefer/Jerome_Ki2_SEW4.xyz",
+    "class": "Kiefer"
+  },
+  {
+    "index": 587,
+    "path": "data/STPCTLC/Kiefer/Jerome_Ki43_SEW30.xyz",
+    "class": "Kiefer"
+  },
+  {
+    "index": 588,
+    "path": "data/STPCTLC/Kiefer/13.xyz",
+    "class": "Kiefer"
+  },
+  {
+    "index": 589,
+    "path": "data/STPCTLC/Kiefer/65_54.xyz",
+    "class": "Kiefer"
+  },
+  {
+    "index": 590,
+    "path": "data/STPCTLC/Kiefer/9.xyz",
+    "class": "Kiefer"
+  },
+  {
+    "index": 591,
+    "path": "data/STPCTLC/Roteiche/Baum0_534_brb_psnord-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 592,
+    "path": "data/STPCTLC/Roteiche/Baum0_13_thu_neust-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 593,
+    "path": "data/STPCTLC/Roteiche/Baum5_649_thu_jena-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 594,
+    "path": "data/STPCTLC/Roteiche/Baum0_285_brb_pss\u0411d-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 595,
+    "path": "data/STPCTLC/Roteiche/Baum7_256_brb_pss\u0411d-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 596,
+    "path": "data/STPCTLC/Roteiche/Baum2_171_bwb2_-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 597,
+    "path": "data/STPCTLC/Roteiche/Baum9_512_bwb2_-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 598,
+    "path": "data/STPCTLC/Roteiche/Baum8_nds_da_-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 599,
+    "path": "data/STPCTLC/Roteiche/Baum8_115_nrwl33_-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 600,
+    "path": "data/STPCTLC/Roteiche/Baum4_613_thu_jena-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 601,
+    "path": "data/STPCTLC/Roteiche/Baum8_308_thu_jena-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 602,
+    "path": "data/STPCTLC/Roteiche/Baum3_359_thu_jena-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 603,
+    "path": "data/STPCTLC/Roteiche/Baum0_227_thu_jena-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 604,
+    "path": "data/STPCTLC/Roteiche/Baum6_562_brb_psnord-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 605,
+    "path": "data/STPCTLC/Roteiche/Baum9_583_thu_jena-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 606,
+    "path": "data/STPCTLC/Roteiche/Baum8_45_bwb2_-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 607,
+    "path": "data/STPCTLC/Roteiche/Baum5_350_nrwl33-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 608,
+    "path": "data/STPCTLC/Roteiche/Baum5_nds_da_-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 609,
+    "path": "data/STPCTLC/Roteiche/Baum3_311_nrwl30-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 610,
+    "path": "data/STPCTLC/Roteiche/Baum3_124_brb_psnord-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 611,
+    "path": "data/STPCTLC/Roteiche/Baum5_450_brb_psnord-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 612,
+    "path": "data/STPCTLC/Roteiche/Baum0_506_bwb4_-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 613,
+    "path": "data/STPCTLC/Roteiche/Baum2_nds_da_-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 614,
+    "path": "data/STPCTLC/Roteiche/Baum6_27_brb_pss\u0411d-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 615,
+    "path": "data/STPCTLC/Roteiche/Baum6_178_nrwl30-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 616,
+    "path": "data/STPCTLC/Roteiche/Baum3_37_nds_ro-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 617,
+    "path": "data/STPCTLC/Roteiche/Baum9_188_thu_neust-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 618,
+    "path": "data/STPCTLC/Roteiche/Baum2_559_nds_ro-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 619,
+    "path": "data/STPCTLC/Roteiche/Baum5_1_bwb2-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 620,
+    "path": "data/STPCTLC/Roteiche/Baum0_578_nds_ro-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 621,
+    "path": "data/STPCTLC/Roteiche/Baum9_552_nds_ro-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 622,
+    "path": "data/STPCTLC/Roteiche/Baum6_210_thu_neust-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 623,
+    "path": "data/STPCTLC/Roteiche/Baum4_252_nrwl33-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 624,
+    "path": "data/STPCTLC/Roteiche/Baum5_345_thu_neust-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 625,
+    "path": "data/STPCTLC/Roteiche/Baum0_nds_da_-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 626,
+    "path": "data/STPCTLC/Roteiche/Baum7_404_nrwl33-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 627,
+    "path": "data/STPCTLC/Roteiche/Baum1_66_nrwl33-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 628,
+    "path": "data/STPCTLC/Roteiche/Baum3_78_bwb2_-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 629,
+    "path": "data/STPCTLC/Roteiche/Baum6_401_thu_jena-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 630,
+    "path": "data/STPCTLC/Roteiche/Baum2_197_brb_pss\u0411d-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 631,
+    "path": "data/STPCTLC/Roteiche/Baum1_414_thu_neust-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 632,
+    "path": "data/STPCTLC/Roteiche/Baum1_nds_da_-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 633,
+    "path": "data/STPCTLC/Roteiche/Baum2_263_nrwl30-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 634,
+    "path": "data/STPCTLC/Roteiche/Baum5_267_brb_pss\u0411d_-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 635,
+    "path": "data/STPCTLC/Roteiche/Baum8_335_brb_psnord-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 636,
+    "path": "data/STPCTLC/Roteiche/Baum9_149_nrwl30-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 637,
+    "path": "data/STPCTLC/Roteiche/Baum8_437_bwb4_-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 638,
+    "path": "data/STPCTLC/Roteiche/Baum1_154_nrwl30-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 639,
+    "path": "data/STPCTLC/Roteiche/Baum4_336_brb_pss\u0411d-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 640,
+    "path": "data/STPCTLC/Roteiche/Baum4_398_nds_ro-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 641,
+    "path": "data/STPCTLC/Roteiche/Baum5_57_nrwl30_-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 642,
+    "path": "data/STPCTLC/Roteiche/Baum4_33_nrwl30-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 643,
+    "path": "data/STPCTLC/Roteiche/Baum7_103_thu_neust-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 644,
+    "path": "data/STPCTLC/Roteiche/Baum6_479_bwb4_-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 645,
+    "path": "data/STPCTLC/Roteiche/Baum4_217_bwb2_-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 646,
+    "path": "data/STPCTLC/Roteiche/Baum6_434_nrwl33-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 647,
+    "path": "data/STPCTLC/Roteiche/Baum1_114_thu_jena-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 648,
+    "path": "data/STPCTLC/Roteiche/Baum5_485_nds_ro-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 649,
+    "path": "data/STPCTLC/Roteiche/Baum8_251_nds_ro-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 650,
+    "path": "data/STPCTLC/Roteiche/Baum9_nds_da_-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 651,
+    "path": "data/STPCTLC/Roteiche/Baum8_395_thu_neust-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 652,
+    "path": "data/STPCTLC/Roteiche/Baum3_299_thu_neust-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 653,
+    "path": "data/STPCTLC/Roteiche/Baum2_21_nrwl33-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 654,
+    "path": "data/STPCTLC/Roteiche/Baum7_424_bwb2_-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 655,
+    "path": "data/STPCTLC/Roteiche/Baum3_355_brb_pss\u0411d-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 656,
+    "path": "data/STPCTLC/Roteiche/Baum4_nds_da_-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 657,
+    "path": "data/STPCTLC/Roteiche/Baum9_418_brb_psnord-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 658,
+    "path": "data/STPCTLC/Roteiche/Baum4_404_thu_neust-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 659,
+    "path": "data/STPCTLC/Roteiche/Baum7_nds_da_-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 660,
+    "path": "data/STPCTLC/Roteiche/Baum6_nds_da_-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 661,
+    "path": "data/STPCTLC/Roteiche/Baum3_nds_da_-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 662,
+    "path": "data/STPCTLC/Roteiche/Baum4_277_brb_psnord-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 663,
+    "path": "data/STPCTLC/Roteiche/Baum9_29_nrwl33-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 664,
+    "path": "data/STPCTLC/Roteiche/Baum3_-_467_bwb4-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 665,
+    "path": "data/STPCTLC/Roteiche/Baum7_41_thu_jena-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 666,
+    "path": "data/STPCTLC/Roteiche/Baum1_175_bwb4_-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 667,
+    "path": "data/STPCTLC/Roteiche/Baum9_149_brb_pss\u0411d-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 668,
+    "path": "data/STPCTLC/Roteiche/Baum2_128_bwb4_-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 669,
+    "path": "data/STPCTLC/Roteiche/Baum8_194_brb_pss\u0411d-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 670,
+    "path": "data/STPCTLC/Roteiche/Baum7_498_nds_ro-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 671,
+    "path": "data/STPCTLC/Roteiche/Baum7_208_brb_psnord-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 672,
+    "path": "data/STPCTLC/Roteiche/Baum0_123_nrwl30-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 673,
+    "path": "data/STPCTLC/Roteiche/Baum4_430_bwb4_-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 674,
+    "path": "data/STPCTLC/Roteiche/Baum7_404_bwb4_-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 675,
+    "path": "data/STPCTLC/Roteiche/Baum9_288_bwb4_-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 676,
+    "path": "data/STPCTLC/Roteiche/Baum1_351_bwb2_-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 677,
+    "path": "data/STPCTLC/Roteiche/Baum0_188_nrwl33-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 678,
+    "path": "data/STPCTLC/Roteiche/Baum6_179_nds_ro-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 679,
+    "path": "data/STPCTLC/Roteiche/Baum5_373_bwb4_-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 680,
+    "path": "data/STPCTLC/Roteiche/Baum2_59_thu_neust-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 681,
+    "path": "data/STPCTLC/Roteiche/Baum2_312_brb_psnord_-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 682,
+    "path": "data/STPCTLC/Roteiche/Baum3__98_nrwl33-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 683,
+    "path": "data/STPCTLC/Roteiche/Baum2_504_thu_jena-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 684,
+    "path": "data/STPCTLC/Roteiche/Baum0_332_bwb2-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 685,
+    "path": "data/STPCTLC/Roteiche/Baum1_614_brb_psnord_-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 686,
+    "path": "data/STPCTLC/Roteiche/Baum1_128_brb_pss\u0411d-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 687,
+    "path": "data/STPCTLC/Roteiche/Baum8_170_nrwl30-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 688,
+    "path": "data/STPCTLC/Roteiche/Baum1_568_nds_ro-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 689,
+    "path": "data/STPCTLC/Roteiche/Baum7_88_nrwl30-_Cloud.xyz",
+    "class": "Roteiche"
+  },
+  {
+    "index": 690,
+    "path": "data/STPCTLC/Roteiche/Baum6_382_bwb2_-_Cloud.xyz",
+    "class": "Roteiche"
+  }
+]

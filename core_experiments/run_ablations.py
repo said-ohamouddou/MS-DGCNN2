@@ -20,16 +20,16 @@ from utils.experiment_utils import (
     get_cv_dataloaders, train_model, set_seed, save_config,
     generate_cv_splits, TreeSpeciesDatasetCV
 )
-from utils.latex_utils import save_latex_table
 
+from utils.experiment_utils import run_shared_fold, aggregate_metrics, add_common_arguments, prepare_args, get_device, stable_seed
+from utils.experiment_utils import evaluate_corrupted, parse_levels
 import logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 
-
 K_SCALES = [5, 20, 30]
-RETENTION_RATES = [1.0, 0.05]
+RETENTION_RATES = [1.0, 0.50, 0.05]
 
 BASELINE_CONFIG = {
     'MS-DGCNN++ Default': {
@@ -123,7 +123,7 @@ FUSION_CONFIGS = {
             k_scales=K_SCALES,
             use_multiscale=True,
             use_normalized_features=True,
-            local_use_normalized=True,
+            local_use_normalized=False,
             fusion_type='concat_only',
         ),
         'label': 'concat_only'
@@ -134,7 +134,7 @@ FUSION_CONFIGS = {
             k_scales=K_SCALES,
             use_multiscale=True,
             use_normalized_features=True,
-            local_use_normalized=True,
+            local_use_normalized=False,
             fusion_type='add',
         ),
         'label': 'add'
@@ -145,7 +145,7 @@ FUSION_CONFIGS = {
             k_scales=K_SCALES,
             use_multiscale=True,
             use_normalized_features=True,
-            local_use_normalized=True,
+            local_use_normalized=False,
             fusion_type='attention',
         ),
         'label': 'attention'
@@ -156,7 +156,7 @@ FUSION_CONFIGS = {
             k_scales=K_SCALES,
             use_multiscale=True,
             use_normalized_features=True,
-            local_use_normalized=True,
+            local_use_normalized=False,
             fusion_type='gated',
         ),
         'label': 'gated'
@@ -167,13 +167,12 @@ FUSION_CONFIGS = {
             k_scales=K_SCALES,
             use_multiscale=True,
             use_normalized_features=True,
-            local_use_normalized=True,
+            local_use_normalized=False,
             fusion_type='se_fusion',
         ),
         'label': 'se_fusion'
     },
 }
-
 
 
 def get_checkpoint_filename(model_name: str, fold: int) -> str:
@@ -182,197 +181,46 @@ def get_checkpoint_filename(model_name: str, fold: int) -> str:
     return f'{safe_name}_fold{fold}.pth'
 
 
-
-@torch.no_grad()
-def evaluate_model(model: nn.Module, val_loader, device: str) -> Dict:
-    """Evaluate model on validation set."""
-    model.eval()
-    
-    all_preds = []
-    all_labels = []
-    
-    for points, labels in val_loader:
-        points = points.to(device)
-        labels = labels.to(device)
-        
-        logits = model(points)
-        preds = logits.argmax(dim=1)
-        
-        all_preds.extend(preds.cpu().numpy())
-        all_labels.extend(labels.cpu().numpy())
-    
-    all_preds = np.array(all_preds)
-    all_labels = np.array(all_labels)
-    
-    from sklearn.metrics import accuracy_score, balanced_accuracy_score, f1_score
-    
-    return {
-        'oa': accuracy_score(all_labels, all_preds) * 100,
-        'macc': balanced_accuracy_score(all_labels, all_preds) * 100,
-        'f1': f1_score(all_labels, all_preds, average='macro') * 100,
-    }
-
-
-
-def generate_combined_latex_table_dual_retention(
-    baseline_results: Dict, 
-    single_scale_results: Dict, 
-    fusion_results: Dict,
-    retention_rates: List[float]
-) -> str:
-    """Generate a combined LaTeX table with both retention rates, bold best values, and epoch time."""
-    lines = []
-    
-    lines.append(r"\begin{table}[htbp]")
-    lines.append(r"\centering")
-    lines.append(r"\caption{MS-DGCNN++ Ablation Study Results}")
-    lines.append(r"\label{tab:ablation_results}")
-    lines.append(r"\resizebox{\textwidth}{!}{")
-
-    lines.append(r"\begin{tabular}{l|cc|cc|cc|c}")
-    lines.append(r"\toprule")
-    lines.append(r"Model & \multicolumn{2}{c|}{OA (\%)} & \multicolumn{2}{c|}{mAcc (\%)} & \multicolumn{2}{c|}{F1 (\%)} & Time \\")
-    ret_labels = [f"r={int(r*100)}\\%" for r in retention_rates]
-    lines.append(f"      & {ret_labels[0]} & {ret_labels[1]} & {ret_labels[0]} & {ret_labels[1]} & {ret_labels[0]} & {ret_labels[1]} & (s/epoch) \\\\")
-    lines.append(r"\midrule")
-
-    all_models = {}
-    for model_name in BASELINE_CONFIG.keys():
-        all_models[model_name] = baseline_results.get(model_name, {})
-    for model_name in SINGLE_SCALE_CONFIGS.keys():
-        all_models[model_name] = single_scale_results.get(model_name, {})
-    for model_name in FUSION_CONFIGS.keys():
-        all_models[model_name] = fusion_results.get(model_name, {})
-
-    best_values = {}
-    for retention in retention_rates:
-        ret_key = f'r{int(retention*100)}'
-        for metric in ['oa', 'macc', 'f1']:
-            values = []
-            for model_name, model_data in all_models.items():
-                if ret_key in model_data and 'mean' in model_data[ret_key]:
-                    val = model_data[ret_key]['mean'].get(metric, 0)
-                    if val < 2:
-                        val = val * 100
-                    values.append(val)
-            best_values[(ret_key, metric)] = max(values) if values else 0
-    
-    def format_cell(model_data, ret_key, metric, best_val):
-        """Format a cell with optional bold for best value."""
-        if ret_key not in model_data or 'mean' not in model_data[ret_key]:
-            return "-"
-        mean_val = model_data[ret_key]['mean'].get(metric, 0)
-        std_val = model_data[ret_key]['std'].get(metric, 0)
-        if mean_val < 2:
-            mean_val = mean_val * 100
-            std_val = std_val * 100
-        cell = f"{mean_val:.1f}$\\pm${std_val:.1f}"
-        if abs(mean_val - best_val) < 0.5 and mean_val > 0:
-            cell = f"\\textbf{{{cell}}}"
-        return cell
-    
-    def format_epoch_time(model_data):
-        """Format epoch time from any available retention rate."""
-        for ret_key in [f'r{int(r*100)}' for r in retention_rates]:
-            if ret_key in model_data and 'mean' in model_data[ret_key]:
-                epoch_time = model_data[ret_key]['mean'].get('epoch_time', 0)
-                if epoch_time > 0:
-                    return f"{epoch_time:.2f}"
-        return "-"
-    
-    def add_model_row(model_name, model_data, label=None):
-        """Add a row for a model."""
-        display_name = label if label else model_name
-        cells = [display_name]
-        for metric in ['oa', 'macc', 'f1']:
-            for retention in retention_rates:
-                ret_key = f'r{int(retention*100)}'
-                best_val = best_values.get((ret_key, metric), 0)
-                cells.append(format_cell(model_data, ret_key, metric, best_val))
-        cells.append(format_epoch_time(model_data))
-        return " & ".join(cells) + " \\\\"
-
-    lines.append(r"\multicolumn{8}{l}{\textbf{Baseline}} \\")
-    for model_name in BASELINE_CONFIG.keys():
-        if model_name in all_models:
-            lines.append(add_model_row(model_name, all_models[model_name]))
-    lines.append(r"\midrule")
-
-    lines.append(r"\multicolumn{8}{l}{\textbf{Single-Scale DGCNN}} \\")
-    for model_name in SINGLE_SCALE_CONFIGS.keys():
-        if model_name in all_models:
-            lines.append(add_model_row(model_name, all_models[model_name]))
-    lines.append(r"\midrule")
-
-    lines.append(r"\multicolumn{8}{l}{\textbf{Multi-Scale Fusion}} \\")
-    for model_name in FUSION_CONFIGS.keys():
-        if model_name in all_models:
-            label = FUSION_CONFIGS[model_name]['label']
-            lines.append(add_model_row(model_name, all_models[model_name], label))
-    
-    lines.append(r"\bottomrule")
-    lines.append(r"\end{tabular}")
-    lines.append(r"}")
-    lines.append(r"\end{table}")
-    
-    return "\n".join(lines)
-
-
-
-def plot_ablation_results(single_scale_results: Dict, fusion_results: Dict, output_dir: Path):
-    """Create bar plots for ablation results."""
-    import matplotlib.pyplot as plt
-    
-    plt.rcParams.update({
-        'font.size': 14,
-        'font.weight': 'bold',
-        'axes.labelsize': 16,
-        'axes.labelweight': 'bold',
-        'axes.titlesize': 18,
-        'axes.titleweight': 'bold',
-        'legend.fontsize': 12,
-        'xtick.labelsize': 12,
-        'ytick.labelsize': 13,
-    })
-    
-    fig, axes = plt.subplots(1, 2, figsize=(14, 5))
-
-    ax1 = axes[0]
-    names = list(SINGLE_SCALE_CONFIGS.keys())
-    accs = [single_scale_results[n]['mean']['oa'] if n in single_scale_results else 0 for n in names]
-    stds = [single_scale_results[n]['std']['oa'] if n in single_scale_results else 0 for n in names]
-    
-    x = np.arange(len(names))
-    bars = ax1.bar(x, accs, yerr=stds, capsize=5, color=['#E74C3C', '#3498DB', '#27AE60'])
-    ax1.set_xticks(x)
-    ax1.set_xticklabels([n.replace('DGCNN ', '') for n in names], rotation=0)
-    ax1.set_ylabel('Overall Accuracy (%)', fontsize=16, fontweight='bold')
-    ax1.set_title('Single-Scale DGCNN: k Value Effect', fontsize=18, fontweight='bold')
-    ax1.grid(True, alpha=0.3, axis='y')
-
-    ax2 = axes[1]
-    names = list(FUSION_CONFIGS.keys())
-    accs = [fusion_results[n]['mean']['oa'] if n in fusion_results else 0 for n in names]
-    stds = [fusion_results[n]['std']['oa'] if n in fusion_results else 0 for n in names]
-    
-    x = np.arange(len(names))
-    colors = ['#1ABC9C', '#9B59B6', '#F39C12', '#E74C3C', '#3498DB', '#27AE60']
-    bars = ax2.bar(x, accs, yerr=stds, capsize=5, color=colors[:len(names)])
-    ax2.set_xticks(x)
-    ax2.set_xticklabels([FUSION_CONFIGS[n]['label'] for n in names], rotation=45, ha='right')
-    ax2.set_ylabel('Overall Accuracy (%)', fontsize=16, fontweight='bold')
-    ax2.set_title('MS-DGCNN++: Fusion Method Comparison', fontsize=18, fontweight='bold')
-    ax2.grid(True, alpha=0.3, axis='y')
-    
-    plt.tight_layout()
-    
-    out_path = output_dir / 'ablation_results.png'
-    plt.savefig(out_path, dpi=300, bbox_inches='tight')
-    plt.savefig(str(out_path).replace('.png', '.pdf'), format='pdf', bbox_inches='tight')
-    plt.close(fig)
-    
-    logger.info(f"Saved ablation plot to: {out_path}")
-
+def generate_combined_latex_table_dual_retention(baseline_results, single_scale_results,
+                                                fusion_results, retention_rates):
+    """Table 7 (any number of test retention rates); bold the highest displayed mean per column."""
+    groups = [('Baseline', BASELINE_CONFIG, baseline_results),
+              ('Single-scale DGCNN', SINGLE_SCALE_CONFIGS, single_scale_results),
+              ('Multi-scale fusion', FUSION_CONFIGS, fusion_results)]
+    keys = [f'r{int(round(r*100))}' for r in retention_rates]
+    n = len(keys)
+    best = {}
+    for metric in ['oa', 'f1']:
+        for key in keys:
+            scale = 100 if metric == 'f1' else 1
+            best[(metric,key)] = max(round(scale*d[name][key]['mean'][metric],1)
+                                    for _, configs,d in groups for name in configs)
+    rate_labels = ' & '.join([rf'{int(round(r*100))}\%' for r in retention_rates] * 2)
+    lines = [r'\begin{table}[htbp]', r'\centering',
+             r'\caption{Component ablation. Models trained on clean data and tested at upper-canopy retention $r$. Mean $\pm$ standard deviation across five folds (ddof=0). Bold: highest displayed mean per column.}',
+             r'\label{tab:ablation_results}', r'\resizebox{\textwidth}{!}{%',
+             r'\begin{tabular}{l' + 'c'*(2*n) + '}', r'\toprule',
+             rf'Model & \multicolumn{{{n}}}{{c}}{{OA (\%)}} & \multicolumn{{{n}}}{{c}}{{F1 (\%)}} \\',
+             rf'\cmidrule(lr){{2-{1+n}}}\cmidrule(lr){{{2+n}-{1+2*n}}}',
+             r' & ' + rate_labels + r' \\']
+    labels = {'concat_only':'Concat Only','add':'Add','attention':'Attention','gated':'Gated','se_fusion':'SE Fusion'}
+    for heading, configs, data in groups:
+        lines += [r'\midrule', rf'\multicolumn{{{1+2*n}}}{{l}}{{\textbf{{{heading}}}}} \\']
+        for name, conf in configs.items():
+            label = labels.get(conf['label'], conf['label']).replace('k1=',r'$k_1$=').replace('k=',r'$k$=')
+            if name == 'MS-DGCNN++ Default':
+                label = 'MS-DGCNN++ (DA, Concat Conv)'
+            cells = [label]
+            for metric in ['oa', 'f1']:
+                scale = 100 if metric == 'f1' else 1
+                for key in keys:
+                    mean, sd = (scale*data[name][key][stat][metric] for stat in ['mean','std'])
+                    cell = f'{mean:.1f}$\\pm${sd:.1f}'
+                    if round(mean,1) == best[(metric,key)]:
+                        cell = r'\best{' + cell + '}'
+                    cells.append(cell)
+            lines.append(' & '.join(cells) + r' \\')
+    return '\n'.join(lines + [r'\bottomrule',r'\end{tabular}}',r'\end{table}'])
 
 
 def get_checkpoint_filename_with_retention(model_name: str, fold: int, retention: float) -> str:
@@ -382,115 +230,121 @@ def get_checkpoint_filename_with_retention(model_name: str, fold: int, retention
     return f'{safe_name}_r{ret_pct}_fold{fold}.pth'
 
 
-def train_or_load_model(
-    model_config: Dict,
-    model_name: str,
-    fold: int,
-    retention: float,
-    checkpoints_dir: Path,
-    import_checkpoints: Path,
-    args,
-    device,
-    num_classes: int,
-    eval_only: bool = False
-) -> Dict:
-    """Train or load a model for a specific fold and retention rate."""
-    
-    ret_pct = int(retention * 100)
-    ckpt_filename = get_checkpoint_filename_with_retention(model_name, fold, retention)
-    ckpt_path = checkpoints_dir / ckpt_filename
-
+def train_clean_and_evaluate(model_config, model_name, fold, retention_rates, checkpoints_dir,
+                             import_checkpoints, args, output_dir):
+    """Clean training (shared cache), then testing at each upper-canopy retention rate."""
+    ckpt_path = checkpoints_dir / get_checkpoint_filename(model_name, fold)
     if import_checkpoints:
-        import_path = import_checkpoints / ckpt_filename
-
-        if import_path.exists() and not ckpt_path.exists():
-            import shutil
-            shutil.copy(import_path, ckpt_path)
-            logger.info(f"Imported checkpoint: {ckpt_filename}")
-        elif retention == 1.0:
-            old_ckpt_filename = get_checkpoint_filename(model_name, fold)
-            import_path = import_checkpoints / old_ckpt_filename
-            if import_path.exists() and not ckpt_path.exists():
-                import shutil
-                shutil.copy(import_path, ckpt_path)
-                logger.info(f"Imported checkpoint: {old_ckpt_filename} -> {ckpt_filename}")
-
-    if ckpt_path.exists():
-        checkpoint = torch.load(ckpt_path, map_location=device, weights_only=False)
-        metrics = checkpoint.get('metrics', {})
-        logger.info(f"    Fold {fold} r={ret_pct}%: OA={metrics.get('oa', 0):.1f}% (cached)")
-        return metrics
-
-    if eval_only:
-        logger.warning(f"    Fold {fold} r={ret_pct}%: Checkpoint not found, skipping (eval_only mode)")
-        return {}
-
-    logger.info(f"    Fold {fold} r={ret_pct}%: Training...")
-
-    set_seed(args.seed + fold)
-
-    train_loader, val_loader, _, _ = get_cv_dataloaders(
-        args.data_path, fold=fold, batch_size=args.batch_size,
-        num_points=args.num_points, seed=args.seed, k_folds=args.k_folds,
-        density_retention=retention, density_seed=args.seed
-    )
-    
-    try:
-        model = model_config['factory'](num_classes)
-        model = model.to(device)
-        
-        best_metrics, model = train_model(
-            model, train_loader, val_loader, device,
-            epochs=args.epochs, lr=args.lr, weight_decay=args.weight_decay,
-            save_path=str(ckpt_path), patience=args.patience
-        )
-        
-        logger.info(f"    Fold {fold} r={ret_pct}%: OA={best_metrics.get('oa', 0):.1f}%")
-        return best_metrics
-    except Exception as e:
-        logger.error(f"    Fold {fold} r={ret_pct}%: Training failed: {e}")
-        return {}
+        candidate = import_checkpoints / ckpt_path.name
+        if candidate.exists():
+            # The shared loader validates metadata before accepting this import.
+            ckpt_path = candidate
+    clean, model = run_shared_fold(args, fold, model_config['factory'], checkpoint_path=ckpt_path)
+    results = {r: evaluate_corrupted(args, fold, model, clean, retention=r, output_dir=output_dir)
+               for r in retention_rates}
+    del model
+    return results
 
 
-def aggregate_fold_results(folds_data: List[Dict], epochs: int = 150) -> Dict:
-    """Compute mean and std from fold results, including epoch time."""
-    if not folds_data:
-        return {}
+def aggregate_fold_results(folds_data, epochs=100):
+    """Macro-F1 is averaged over classes WITHIN each fold, then across folds."""
+    return aggregate_metrics(folds_data, k_folds=5)
 
-    epoch_times = []
-    for f in folds_data:
-        total_time = f.get('total_training_time', f.get('training_time', 0))
-        if total_time > 0:
-            epoch_times.append(total_time / epochs)
-    
-    return {
-        'mean': {
-            'oa': np.mean([f.get('oa', 0) for f in folds_data]),
-            'macc': np.mean([f.get('macc', 0) for f in folds_data]),
-            'f1': np.mean([f.get('f1', 0) for f in folds_data]),
-            'epoch_time': np.mean(epoch_times) if epoch_times else 0,
-        },
-        'std': {
-            'oa': np.std([f.get('oa', 0) for f in folds_data]),
-            'macc': np.std([f.get('macc', 0) for f in folds_data]),
-            'f1': np.std([f.get('f1', 0) for f in folds_data]),
-            'epoch_time': np.std(epoch_times) if epoch_times else 0,
-        }
+
+def run_outlier_study(args):
+    """Table 5: clean training, fixed contaminated validation, matched scales."""
+    from models.baselines import BASELINES, POINTM2AE_CKPT
+    from utils.experiment_utils import save_results_json
+    m2ae_ckpt = str(POINTM2AE_CKPT)
+    if not POINTM2AE_CKPT.exists():
+        raise FileNotFoundError(f'Point-M2AE pretrained weights not found: {m2ae_ckpt}')
+    output_dir = Path(args.output_dir) / f'outliers_{datetime.now():%Y%m%d_%H%M%S}'
+    output_dir.mkdir(parents=True, exist_ok=True)
+    save_config(dict(vars(args), dgcnn_edgeconv_k=[5,30,30,30], ms_dgcnn_scales=[5,20,30], pointm2ae_pretrained=m2ae_ckpt,
+                     outliers='append floor(rate*N) uniform bounding-box points before normalization; N=1024',
+                     protocol_name='clean_train_corrupted_test'),
+                output_dir / 'config.json')
+    configs = {
+        # Shared baseline definitions (models/baselines.py): same clean checkpoints as
+        # Figures 4-5; DGCNN (k1=5, k=30) is also Table 7's single-scale DGCNN
+        'DGCNN': BASELINES['dgcnn']['factory'],
+        'MS-DGCNN': BASELINES['ms_dgcnn']['factory'],
+        'MS-DGCNN++ (RO)': lambda nc: create_model(num_classes=nc, k_scales=[5,20,30],
+                    use_normalized_features=False, local_use_normalized=False),
+        'MS-DGCNN++ (HE)': lambda nc: create_model(num_classes=nc, k_scales=[5,20,30],
+                    use_normalized_features=True, local_use_normalized=True),
+        'MS-DGCNN++ (DA)': lambda nc: create_model(num_classes=nc, k_scales=[5,20,30],
+                    use_normalized_features=True, local_use_normalized=False),
+        'MS-DGCNN++ (RA)': lambda nc: create_model(num_classes=nc, k_scales=[5,20,30],
+                    use_normalized_features=False, local_use_normalized=True),
+        # Full fine-tuning from the ShapeNet-pretrained Point-M2AE weights
+        'Point-M2AE': BASELINES['pointm2ae']['factory'],
     }
+    rates = parse_levels(args.outlier_rates, '--outlier_rates')
+    all_results = {name: {r: [] for r in rates} for name in configs}
+    clean_results = {name: [] for name in configs}
+    for name, factory in configs.items():
+        for fold in range(args.k_folds):
+            clean_metrics, model = run_shared_fold(args, fold, factory)
+            # Same saved clean evaluation as Table 6 / Figure 4 / Table 7 at 100%
+            clean_results[name].append(evaluate_corrupted(args, fold, model, clean_metrics,
+                                                          retention=1.0, output_dir=output_dir))
+            for rate in rates:
+                all_results[name][rate].append(evaluate_corrupted(
+                    args, fold, model, clean_metrics, outlier_rate=rate, output_dir=output_dir))
+            del model
+        save_results_json(all_results, output_dir / 'outlier_results.json')
+    aggregated = {name: {r: aggregate_metrics(folds) for r,folds in rates_data.items()}
+                  for name,rates_data in all_results.items()}
+    clean_agg = {name: aggregate_metrics(folds) for name, folds in clean_results.items()}
+    save_results_json({'outlier_rates': rates, 'clean': {n: {k: v for k, v in a.items() if k != 'folds'}
+                       for n, a in clean_agg.items()},
+                       'corrupted': {n: {str(r): {k: v for k, v in a.items() if k != 'folds'}
+                                         for r, a in by_rate.items()} for n, by_rate in aggregated.items()}},
+                      output_dir / 'outlier_summary.json')
+    show_clean = 0.0 not in rates  # 0% outliers is the same clean evaluation
+    header = ' & '.join((['Clean'] if show_clean else []) + [rf'{r*100:g}\%' for r in rates])
+    lines = [r'\begin{table*}[htbp]',r'\centering',
+        r'\caption{Outlier robustness. OA (\%), mean $\pm$ standard deviation across five folds (ddof=0). Models trained on clean data and tested with added outliers (percentage of the original input count). DGCNN: DGCNN ($k_1=5$, $k=30$); MS-DGCNN scales: [5,20,30], no internal FPS; Point-M2AE: pretrained, fully fine-tuned.}',
+        r'\label{tab:robustness_all}', r'\resizebox{\textwidth}{!}{%',
+        r'\begin{tabular}{l' + 'c'*(len(rates)+show_clean) + '}', r'\toprule',
+        'Model & ' + header + r' \\', r'\midrule']
+    for name in configs:
+        c = clean_agg[name]
+        cells=[name] + ([f"{c['mean']['oa']:.1f}$\\pm${c['std']['oa']:.1f}"] if show_clean else [])
+        for rate in rates:
+            a=aggregated[name][rate]
+            cell=f"{a['mean']['oa']:.1f}$\\pm${a['std']['oa']:.1f}"
+            best=max(round(aggregated[n][rate]['mean']['oa'],1) for n in configs)
+            if round(a['mean']['oa'],1)==best:
+                cell=r'\textbf{'+cell+'}'
+            cells.append(cell)
+        lines.append(' & '.join(cells)+r' \\')
+    # Figure in the same style as the density (Fig. 4) and noise (Fig. 5) figures
+    from utils.robustness_plot import plot_robustness, fold_stats
+    key_map = {'MS-DGCNN++ (RO)': 'raw_only', 'MS-DGCNN++ (HE)': 'hybrid_everywhere',
+               'MS-DGCNN++ (DA)': 'default', 'MS-DGCNN++ (RA)': 'reversed', 'DGCNN': 'dgcnn',
+               'MS-DGCNN': 'ms_dgcnn', 'Point-M2AE': 'pointm2ae'}
+    plot_robustness(fold_stats(all_results, rates, key_map), output_dir / 'outlier_robustness',
+                    'Added outliers (% of input points)', xticklabels=[f'{r*100:g}' for r in rates],
+                    legend_loc='lower left')
+    (output_dir / 'outlier_results.tex').write_text('\n'.join(lines+[r'\bottomrule',r'\end{tabular}}',r'\end{table*}']))
+    logger.info('Table 5 saved to %s',output_dir)
 
 
 def main():
+    global RETENTION_RATES
     parser = argparse.ArgumentParser(description='MS-DGCNN2 Component Ablation Studies')
     parser.add_argument('--data_path', type=str, default='data/STPCTLC',
                         help='Path to STPCTLC data directory')
-    parser.add_argument('--output_dir', type=str, default='results/ablations',
+    parser.add_argument('--output_dir', type=str, default='results/paper_v2/ablations',
                         help='Output directory for results')
     parser.add_argument('--import_checkpoints', type=str, 
                         default=None,
                         help='Path to import existing checkpoints (all retention rates)')
     parser.add_argument('--k_folds', type=int, default=5,
                         help='Number of CV folds')
-    parser.add_argument('--epochs', type=int, default=150,
+    parser.add_argument('--epochs', type=int, default=100,
                         help='Number of training epochs')
     parser.add_argument('--batch_size', type=int, default=16,
                         help='Batch size')
@@ -500,8 +354,8 @@ def main():
                         help='Weight decay')
     parser.add_argument('--num_points', type=int, default=1024,
                         help='Number of points per sample')
-    parser.add_argument('--patience', type=int, default=20,
-                        help='Early stopping patience')
+    parser.add_argument('--patience', type=int, default=0,
+                        help='Early stopping patience; 0 runs all epochs (paper default)')
     parser.add_argument('--seed', type=int, default=42,
                         help='Random seed')
     parser.add_argument('--device', type=str, default='cuda',
@@ -509,7 +363,18 @@ def main():
     parser.add_argument('--eval_only', action='store_true',
                         help='Evaluation only mode - load checkpoints and generate LaTeX, no training')
     
-    args = parser.parse_args()
+    parser.add_argument('--outliers', action='store_true', help='Run only the paper Table 5 outlier evaluation')
+    parser.add_argument('--retention_rates', type=float, nargs='+', default=RETENTION_RATES,
+                        help='Test-time upper-canopy retention rates for Table 7 (clean-trained models)')
+    parser.add_argument('--outlier_rates', type=float, nargs='+',
+                        default=[0, .01, .02, .05, .10, .15, .20, .25, .30, .40, .50, .60, .75, .90, 1.0],
+                        help='Test-time outlier fractions for Table 5 (clean-trained models)')
+    add_common_arguments(parser)
+    args = prepare_args(parser.parse_args())
+    RETENTION_RATES = parse_levels(args.retention_rates, '--retention_rates')
+    if args.outliers:
+        run_outlier_study(args)
+        return
 
     script_dir = os.path.dirname(os.path.abspath(__file__))
     if not os.path.isabs(args.data_path):
@@ -562,6 +427,7 @@ def main():
 
     config = {
         'experiment': 'Component Ablation Studies with Density Dropout',
+        'protocol_name': 'clean_train_corrupted_test',
         'data_path': args.data_path,
         'k_folds': args.k_folds,
         'epochs': args.epochs,
@@ -576,72 +442,24 @@ def main():
         'dropout': 0.5,
         'timestamp': datetime.now().isoformat()
     }
-    save_config(config, output_dir / 'config.json')
+    save_config(dict(config, arguments=vars(args)), output_dir / 'config.json')
 
-    baseline_results = {m: {} for m in BASELINE_CONFIG.keys()}
-    single_scale_results = {m: {} for m in SINGLE_SCALE_CONFIGS.keys()}
-    fusion_results = {m: {} for m in FUSION_CONFIGS.keys()}
-    
-    for retention in RETENTION_RATES:
-        ret_pct = int(retention * 100)
-        ret_key = f'r{ret_pct}'
-        
-        print(f"\n{'#'*70}")
-        print(f"RETENTION RATE: {ret_pct}%")
-        print(f"{'#'*70}")
-        
-        print(f"\n{'='*60}")
-        print("BASELINE: MS-DGCNN++ Default")
-        print(f"{'='*60}")
-        
-        for model_name, model_config in BASELINE_CONFIG.items():
-            folds_data = []
-            for fold in range(args.k_folds):
-                metrics = train_or_load_model(
-                    model_config, model_name, fold, retention,
-                    checkpoints_dir, import_checkpoints,
-                    args, device, num_classes, args.eval_only
-                )
-                if metrics:
-                    folds_data.append(metrics)
-            
-            baseline_results[model_name][ret_key] = aggregate_fold_results(folds_data, args.epochs)
-        
-        print(f"\n{'='*60}")
-        print("ABLATION 1: Single-Scale DGCNN (k value effect)")
-        print(f"{'='*60}")
-        
-        for model_name, model_config in SINGLE_SCALE_CONFIGS.items():
+    groups = [('BASELINE: MS-DGCNN++ Default', BASELINE_CONFIG, {m: {} for m in BASELINE_CONFIG}),
+              ('ABLATION 1: Single-Scale DGCNN (k value effect)', SINGLE_SCALE_CONFIGS, {m: {} for m in SINGLE_SCALE_CONFIGS}),
+              ('ABLATION 2: Fusion Method Comparison', FUSION_CONFIGS, {m: {} for m in FUSION_CONFIGS})]
+    for heading, configs, store in groups:
+        print(f"\n{'='*60}\n{heading}\n{'='*60}")
+        for model_name, model_config in configs.items():
             print(f"\n  {model_config['label']}")
-            folds_data = []
+            per_rate = {r: [] for r in RETENTION_RATES}
             for fold in range(args.k_folds):
-                metrics = train_or_load_model(
-                    model_config, model_name, fold, retention,
-                    checkpoints_dir, import_checkpoints,
-                    args, device, num_classes, args.eval_only
-                )
-                if metrics:
-                    folds_data.append(metrics)
-            
-            single_scale_results[model_name][ret_key] = aggregate_fold_results(folds_data, args.epochs)
-        
-        print(f"\n{'='*60}")
-        print("ABLATION 2: Fusion Method Comparison")
-        print(f"{'='*60}")
-        
-        for model_name, model_config in FUSION_CONFIGS.items():
-            print(f"\n  {model_config['label']}")
-            folds_data = []
-            for fold in range(args.k_folds):
-                metrics = train_or_load_model(
-                    model_config, model_name, fold, retention,
-                    checkpoints_dir, import_checkpoints,
-                    args, device, num_classes, args.eval_only
-                )
-                if metrics:
-                    folds_data.append(metrics)
-            
-            fusion_results[model_name][ret_key] = aggregate_fold_results(folds_data, args.epochs)
+                fold_results = train_clean_and_evaluate(model_config, model_name, fold, RETENTION_RATES,
+                                                        checkpoints_dir, import_checkpoints, args, output_dir)
+                for r, metrics in fold_results.items():
+                    per_rate[r].append(metrics)
+            for r, folds_data in per_rate.items():
+                store[model_name][f'r{int(round(r*100))}'] = aggregate_fold_results(folds_data, args.epochs)
+    baseline_results, single_scale_results, fusion_results = (g[2] for g in groups)
 
     results_save = {
         'k_folds': args.k_folds,
@@ -651,8 +469,8 @@ def main():
         'fusion': fusion_results,
     }
     
-    with open(output_dir / 'results.json', 'w') as f:
-        json.dump(results_save, f, indent=2)
+    from utils.experiment_utils import save_results_json
+    save_results_json(results_save, output_dir / 'results.json')
 
     latex_combined = generate_combined_latex_table_dual_retention(
         baseline_results, single_scale_results, fusion_results, RETENTION_RATES
@@ -665,7 +483,7 @@ def main():
     print("=" * 70)
     
     for retention in RETENTION_RATES:
-        ret_pct = int(retention * 100)
+        ret_pct = int(round(retention * 100))
         ret_key = f'r{ret_pct}'
         print(f"\n--- Retention = {ret_pct}% ---")
         

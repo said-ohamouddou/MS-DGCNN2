@@ -43,48 +43,6 @@ def get_graph_feature(x, k=20, idx=None):
     return feature
 
 
-def farthest_point_sample_cpu(xyz, npoint):
-    """CPU implementation of farthest point sampling."""
-    device = xyz.device
-    B, N, C = xyz.shape
-    centroids = torch.zeros(B, npoint, dtype=torch.long, device=device)
-    distance = torch.ones(B, N, device=device) * 1e10
-    farthest = torch.randint(0, N, (B,), dtype=torch.long, device=device)
-    batch_indices = torch.arange(B, dtype=torch.long, device=device)
-    
-    for i in range(npoint):
-        centroids[:, i] = farthest
-        centroid = xyz[batch_indices, farthest, :].view(B, 1, 3)
-        dist = torch.sum((xyz - centroid) ** 2, -1)
-        mask = dist < distance
-        distance[mask] = dist[mask]
-        farthest = torch.max(distance, -1)[1]
-    
-    return centroids
-
-
-def farthest_point_sample(xyz, npoint):
-    """Farthest point sampling with CUDA fallback."""
-    try:
-        import pointnet2_ops._ext as _ext
-        return _ext.furthest_point_sampling(xyz, npoint)
-    except ImportError:
-        return farthest_point_sample_cpu(xyz, npoint)
-
-
-def index_points(points, idx):
-    """Index points based on indices."""
-    device = points.device
-    B = points.shape[0]
-    view_shape = list(idx.shape)
-    view_shape[1:] = [1] * (len(view_shape) - 1)
-    repeat_shape = list(idx.shape)
-    repeat_shape[0] = 1
-    batch_indices = torch.arange(B, dtype=torch.long).to(device).view(view_shape).repeat(repeat_shape)
-    new_points = points[batch_indices, idx, :]
-    return new_points
-
-
 class MS_DGCNN_Standalone(nn.Module):
     """
     Multi-Scale Dynamic Graph CNN for Point Cloud Classification.
@@ -92,14 +50,14 @@ class MS_DGCNN_Standalone(nn.Module):
     Standalone version without registry dependencies.
     """
     
-    def __init__(self, num_classes=7, k1=5, k2=20, k3=30, fps_points=512, dropout=0.5):
+    def __init__(self, num_classes=7, k1=5, k2=20, k3=30, dropout=0.5):
         super(MS_DGCNN_Standalone, self).__init__()
         
         self.num_classes = num_classes
         self.k1 = k1
         self.k2 = k2
         self.k3 = k3
-        self.fps_points = fps_points
+        self.fps_points = None  # no internal FPS: all input points are used
 
         # Scale 1 (k1)
         self.bn1_1 = nn.BatchNorm2d(64)
@@ -173,10 +131,8 @@ class MS_DGCNN_Standalone(nn.Module):
 
         batch_size = x.size(0)
 
-        # FPS sampling
-        xyz = x.transpose(2, 1).contiguous()
-        fps_idx = farthest_point_sample(xyz, self.fps_points)
-        sampled_points = index_points(xyz, fps_idx).transpose(2, 1).contiguous()
+        # All input points are used (no internal FPS)
+        sampled_points = x.contiguous()
 
         # Scale 1
         x1 = get_graph_feature(sampled_points, k=self.k1)
@@ -215,7 +171,7 @@ class MS_DGCNN_Standalone(nn.Module):
         x = self.conv_agg2(x)
 
         # Global pooling
-        x = F.adaptive_max_pool1d(x, 1).view(batch_size, -1)
+        x = x.max(dim=-1)[0].view(batch_size, -1)  # max over points; deterministic backward on CUDA
 
         # Classifier
         x = F.leaky_relu(self.bn_cls1(self.linear1(x)), negative_slope=0.2)

@@ -1,4 +1,10 @@
-"""Experiment 2: upper-canopy density dropout across retention rates."""
+"""Experiment 2: upper-canopy density dropout across retention rates.
+
+Protocol: models are trained once on clean data (shared with Experiment 1) and
+tested on thinned validation clouds. A small matched-training supplement trains
+selected variants on thinned data as well. New retention rates can be evaluated
+from the saved clean checkpoints with --eval_only --retention_rates ...
+"""
 
 import os
 import sys
@@ -13,12 +19,15 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from models.msdgcnn2 import create_model
 from utils.experiment_utils import (
     get_cv_dataloaders, train_model, set_seed, save_config,
-    ExperimentResults, plot_degradation_curves, save_results_table,
+    ExperimentResults,
     generate_cv_splits, TreeSpeciesDatasetCV, evaluate
 )
 
 import matplotlib.pyplot as plt
 import pandas as pd
+from utils.experiment_utils import run_shared_fold, aggregate_metrics, add_common_arguments, prepare_args, get_device, stable_seed
+from utils.experiment_utils import evaluate_corrupted, parse_levels
+from models.baselines import BASELINES, BASELINE_COLORS
 import logging
 
 logging.basicConfig(level=logging.INFO)
@@ -29,227 +38,111 @@ VARIANTS = {
     'raw_only': {
         'use_normalized_features': False,
         'local_use_normalized': False,
-        'label': '(a) Raw-only'
+        'label': 'MS-DGCNN++ (RO)'
     },
     'hybrid_everywhere': {
         'use_normalized_features': True,
         'local_use_normalized': True,
-        'label': '(b) Hybrid-everywhere'
+        'label': 'MS-DGCNN++ (HE)'
     },
     'default': {
         'use_normalized_features': True,
         'local_use_normalized': False,
-        'label': '(c) Default asymmetric'
+        'label': 'MS-DGCNN++ (DA)'
     },
     'reversed': {
         'use_normalized_features': False,
         'local_use_normalized': True,
-        'label': '(d) Reversed asymmetric'
+        'label': 'MS-DGCNN++ (RA)'
     }
 }
 
-RETENTION_RATES = [1.0, 0.75, 0.50, 0.25, 0.10, 0.05]
+RETENTION_RATES = [1.0, 0.90, 0.80, 0.70, 0.60, 0.50, 0.40, 0.30, 0.25, 0.20, 0.15, 0.10, 0.05, 0.02, 0.01]  # 1.0 = clean
 
 
-def compute_k2_neighbor_distance(data_path, fold, retention_rate, k2=20, 
+def compute_k2_neighbor_distance(data_path, fold, retention_rate, k2=20,
                                   num_points=1024, seed=42, k_folds=5):
-    """Compute mean k2-neighbor distance for upper canopy points in test set."""
-    from torch.utils.data import DataLoader
-    
-    dataset = TreeSpeciesDatasetCV(
-        data_path, fold=fold, partition='val', num_points=num_points,
-        augment=False, seed=seed, k_folds=k_folds,
-        density_retention=retention_rate, density_seed=seed
-    )
-    
-    distances = []
-    
-    for idx in range(min(100, len(dataset))):  # Sample 100 point clouds
-        points, _ = dataset[idx]
-        points = points.numpy()
-        
-        # Compute median height
-        median_z = np.median(points[:, 2])
-        upper_mask = points[:, 2] > median_z
-        upper_points = points[upper_mask]
-        
-        if len(upper_points) < k2:
-            continue
-        
-        # Compute pairwise distances for upper canopy
-        from scipy.spatial.distance import cdist
-        dists = cdist(upper_points, upper_points)
-        
-        # Get k2-nearest neighbor distances (excluding self)
-        for i in range(len(upper_points)):
-            sorted_dists = np.sort(dists[i])[1:k2+1]  # Exclude self (0)
-            distances.append(np.mean(sorted_dists))
-    
-    return np.mean(distances), np.std(distances)
+    """Original upper-canopy queries to all input points; k includes the center.
+
+    Uses the same thinning and padding as training, in normalized coordinates.
+    Average within each query, then cloud; the caller combines all validation folds.
+    """
+    from scipy.spatial.distance import cdist
+    from utils.experiment_utils import normalize_pc
+    dataset = TreeSpeciesDatasetCV(data_path, fold=fold, partition='val',
+        num_points=num_points, augment=False, seed=seed, k_folds=k_folds,
+        density_retention=retention_rate, density_seed=seed)
+    means = []
+    for idx in range(len(dataset)):
+        original = dataset.data[idx]
+        points = dataset.apply_density_dropout(original, stable_seed(seed, int(dataset.indices[idx]), 'density'))
+        queries = points[:,2] > np.median(original[:,2])
+        points = normalize_pc(points)
+        if queries.any():
+            distances = cdist(points[queries], points)
+            means.append(float(np.partition(distances, k2-1, axis=1)[:,:k2].mean()))
+    return means
+
+
+def make_factory(config):
+    return lambda nc: create_model(num_classes=nc, k_scales=[5,20,30],
+        use_multiscale=True, use_normalized_features=config['use_normalized_features'],
+        local_use_normalized=config['local_use_normalized'], fusion_type='concat_conv', emb_dims=1024, dropout=0.5)
+
+
+def all_models():
+    """The four MS-DGCNN++ encodings plus the shared baselines (as in the outlier study)."""
+    models = {v: {'label': c['label'], 'factory': make_factory(c)} for v, c in VARIANTS.items()}
+    models.update(BASELINES)
+    return models
 
 
 def run_experiment(args):
-    """Run Experiment 2: Controlled Density Dropout."""
-    
+    """Figure 4: clean training, thinned test; plus matched (thinned) training for a subset."""
     set_seed(args.seed)
-    device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-    logger.info(f"Using device: {device}")
-    
-    # Handle resume mode
-    if args.resume_dir:
-        output_dir = Path(args.resume_dir)
-        if not output_dir.exists():
-            raise ValueError(f"Resume directory not found: {args.resume_dir}")
-        logger.info(f"Resuming from: {output_dir}")
-    else:
-        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        output_dir = Path(args.output_dir) / f'experiment2_{timestamp}'
-        output_dir.mkdir(parents=True, exist_ok=True)
-    
-    checkpoints_dir = output_dir / 'checkpoints'
-    checkpoints_dir.mkdir(exist_ok=True)
-    
-    generate_cv_splits(args.data_path, k_folds=args.k_folds, seed=args.seed)
-    
-    config = {
-        'experiment': 'Experiment 2: Controlled Density Dropout',
-        'data_path': args.data_path,
-        'k_folds': args.k_folds,
-        'epochs': args.epochs,
-        'batch_size': args.batch_size,
-        'lr': args.lr,
-        'weight_decay': args.weight_decay,
-        'num_points': args.num_points,
-        'retention_rates': RETENTION_RATES,
-        'seed': args.seed,
-        'variants': list(VARIANTS.keys())
-    }
-    save_config(config, output_dir / 'config.json')
-    
-    # Get class info
-    train_loader, val_loader, num_classes, class_names = get_cv_dataloaders(
-        args.data_path, fold=0, batch_size=args.batch_size,
-        num_points=args.num_points, seed=args.seed, k_folds=args.k_folds
-    )
-    
-    # Results storage: {variant: {retention: {fold: metrics}}}
-    all_results = {v: {r: {} for r in RETENTION_RATES} for v in VARIANTS.keys()}
-    
-    # Compute k2-neighbor distances at each retention rate
-    k2_distances = {}
-    logger.info("Computing k2-neighbor distances at each retention rate...")
-    for rate in RETENTION_RATES:
-        mean_dist, std_dist = compute_k2_neighbor_distance(
-            args.data_path, fold=0, retention_rate=rate,
-            k2=20, num_points=args.num_points, seed=args.seed, k_folds=args.k_folds
-        )
-        k2_distances[rate] = {'mean': mean_dist, 'std': std_dist}
-        logger.info(f"Retention {rate*100:.0f}%: k2-distance = {mean_dist:.4f} ± {std_dist:.4f}")
-    
-    # Total runs: 4 variants × 6 rates × 5 folds = 120
-    total_runs = len(VARIANTS) * len(RETENTION_RATES) * args.k_folds
-    run_count = 0
-    
-    # Count checkpoints
-    runs_to_skip = 0
-    runs_to_train = 0
-    for variant_name in VARIANTS.keys():
-        for retention_rate in RETENTION_RATES:
-            for fold in range(args.k_folds):
-                ckpt_path = checkpoints_dir / f'{variant_name}_r{int(retention_rate*100)}_fold{fold}.pth'
-                if ckpt_path.exists():
-                    runs_to_skip += 1
-                else:
-                    runs_to_train += 1
-    
-    logger.info(f"Checkpoints found: {runs_to_skip}, to train: {runs_to_train}")
-    
-    for variant_name, variant_config in VARIANTS.items():
-        for retention_rate in RETENTION_RATES:
-            logger.info(f"\n{'='*60}")
-            logger.info(f"Variant: {variant_config['label']}, Retention: {retention_rate*100:.0f}%")
-            logger.info(f"{'='*60}")
-            
-            for fold in range(args.k_folds):
-                run_count += 1
-                ckpt_path = checkpoints_dir / f'{variant_name}_r{int(retention_rate*100)}_fold{fold}.pth'
-                
-                # Check if checkpoint exists
-                if ckpt_path.exists():
-                    logger.info(f"\n--- Run {run_count}/{total_runs}: Loading checkpoint ---")
-                    
-                    model = create_model(
-                        num_classes=num_classes,
-                        k_scales=[5, 20, 30],
-                        use_multiscale=True,
-                        use_normalized_features=variant_config['use_normalized_features'],
-                        local_use_normalized=variant_config['local_use_normalized'],
-                        fusion_type='concat_conv',
-                        emb_dims=1024,
-                        dropout=0.5
-                    ).to(device)
-                    
-                    checkpoint = torch.load(ckpt_path, map_location=device, weights_only=False)
-                    model.load_state_dict(checkpoint['model_state_dict'])
-                    
-                    if 'metrics' in checkpoint and checkpoint['metrics']:
-                        best_metrics = checkpoint['metrics']
-                    else:
-                        # Re-evaluate
-                        _, val_loader, _, _ = get_cv_dataloaders(
-                            args.data_path, fold=fold, batch_size=args.batch_size,
-                            num_points=args.num_points, seed=args.seed, k_folds=args.k_folds,
-                            density_retention=retention_rate, density_seed=args.seed + fold
-                        )
-                        import torch.nn as nn
-                        criterion = nn.CrossEntropyLoss()
-                        best_metrics = evaluate(model, val_loader, criterion, device)
-                    
-                    all_results[variant_name][retention_rate][fold] = best_metrics
-                    logger.info(f"OA: {best_metrics['oa']:.2f}%, mAcc: {best_metrics['macc']:.2f}%")
-                    continue
-                
-                # Train new model
-                logger.info(f"\n--- Run {run_count}/{total_runs}: Training Fold {fold + 1}/{args.k_folds} ---")
-                
-                # Use retention-independent seeding for model initialization (matches Exp1)
-                set_seed(args.seed + fold)
-                
-                # Retention-specific seed only for data dropout
-                train_loader, val_loader, num_classes, _ = get_cv_dataloaders(
-                    args.data_path, fold=fold, batch_size=args.batch_size,
-                    num_points=args.num_points, seed=args.seed, k_folds=args.k_folds,
-                    density_retention=retention_rate, density_seed=args.seed + int(retention_rate * 100)
-                )
-                
-                model = create_model(
-                    num_classes=num_classes,
-                    k_scales=[5, 20, 30],
-                    use_multiscale=True,
-                    use_normalized_features=variant_config['use_normalized_features'],
-                    local_use_normalized=variant_config['local_use_normalized'],
-                    fusion_type='concat_conv',
-                    emb_dims=1024,
-                    dropout=0.5
-                ).to(device)
-                
-                best_metrics, model = train_model(
-                    model, train_loader, val_loader, device,
-                    epochs=args.epochs, lr=args.lr, weight_decay=args.weight_decay,
-                    save_path=str(ckpt_path), patience=args.patience
-                )
-                
-                all_results[variant_name][retention_rate][fold] = best_metrics
-                logger.info(f"OA: {best_metrics['oa']:.2f}%, mAcc: {best_metrics['macc']:.2f}%")
-    
-    # Save results
-    results_path = output_dir / 'all_results.json'
-    save_results_json(all_results, results_path)
-    
-    # Generate visualizations
-    generate_visualizations(all_results, k2_distances, class_names, output_dir)
+    rates = parse_levels(args.retention_rates, '--retention_rates')
+    output_dir = Path(args.resume_dir) if args.resume_dir else Path(args.output_dir) / f'experiment2_{datetime.now():%Y%m%d_%H%M%S}'
+    output_dir.mkdir(parents=True, exist_ok=True)
+    save_config(dict(vars(args), protocol_name='clean_train_corrupted_test'), output_dir / 'config.json')
+    _, _, _, class_names = get_cv_dataloaders(args.data_path, fold=0, num_points=args.num_points, seed=args.seed)
 
-    logger.info(f"\nExperiment 2 completed. Results saved to {output_dir}")
+    # Main protocol: one clean model per model and fold, tested at every retention rate
+    all_results = {v: {r: {} for r in rates} for v in all_models()}
+    for variant, spec in all_models().items():
+        for fold in range(args.k_folds):
+            logger.info('Density (clean training): %s, fold %s', variant, fold)
+            clean, model = run_shared_fold(args, fold, spec['factory'],
+                checkpoint_path=output_dir / 'checkpoints' / f'{variant}_clean_fold{fold}.pth')
+            for rate in rates:
+                all_results[variant][rate][fold] = evaluate_corrupted(
+                    args, fold, model, clean, retention=rate, output_dir=output_dir)
+            del model
+            save_results_json(all_results, output_dir / 'all_results.json')
+
+    # Supplement: matched training (trained and tested on thinned data)
+    matched = {v: {r: {} for r in args.matched_retentions} for v in args.matched_variants}
+    for variant in args.matched_variants:
+        for rate in args.matched_retentions:
+            for fold in range(args.k_folds):
+                logger.info('Density (matched training): %s, retention %s, fold %s', variant, rate, fold)
+                metrics, model = run_shared_fold(args, fold, make_factory(VARIANTS[variant]), retention=rate,
+                    checkpoint_path=output_dir / 'checkpoints' / f'{variant}_matched_r{int(rate*100)}_fold{fold}.pth')
+                matched[variant][rate][fold] = metrics
+                del model
+    if matched:
+        save_results_json(matched, output_dir / 'matched_results.json')
+
+    k2_distances = {}
+    for rate in rates:
+        means = []
+        for fold in range(args.k_folds):
+            means.extend(compute_k2_neighbor_distance(args.data_path, fold, rate,
+                num_points=args.num_points, seed=args.seed, k_folds=args.k_folds))
+        k2_distances[rate] = {'mean': float(np.mean(means)), 'std': float(np.std(means)), 'clouds': len(means)}
+    from utils.experiment_utils import save_results_json as save_json
+    save_json(k2_distances, output_dir / 'k2_distances.json')
+    generate_visualizations(all_results, k2_distances, class_names, output_dir, rates, matched,
+                            min_retention=args.figure_min_retention)
 
 
 def save_results_json(results, path):
@@ -271,262 +164,73 @@ def save_results_json(results, path):
         json.dump(serializable, f, indent=2)
 
 
-def generate_latex_tables(results, class_names, tables_dir):
-    """Generate LaTeX tables for all metrics."""
-    
-    variant_names = list(VARIANTS.keys())
-    variant_labels = [VARIANTS[v]['label'] for v in variant_names]
-    
-    # Table 1: OA and mAcc at all retention rates
-    lines = []
-    lines.append(r"\begin{table*}[htbp]")
-    lines.append(r"\centering")
-    lines.append(r"\caption{Experiment 2: Overall Accuracy and Mean Accuracy at Different Retention Rates}")
-    lines.append(r"\label{tab:exp2_oa_macc}")
-    lines.append(r"\scriptsize")
-    lines.append(r"\begin{tabular}{l" + "cc" * len(RETENTION_RATES) + "}")
-    lines.append(r"\toprule")
-    
-    # Header row
-    header = "Variant"
-    for rate in RETENTION_RATES:
-        header += f" & \\multicolumn{{2}}{{c}}{{r={int(rate*100)}\\%}}"
-    header += r" \\"
-    lines.append(header)
-    
-    # Sub-header
-    subheader = ""
-    for _ in RETENTION_RATES:
-        subheader += " & OA & mAcc"
-    subheader += r" \\"
-    lines.append(subheader)
-    lines.append(r"\midrule")
-    
-    # Data rows
-    for variant in variant_names:
-        row = VARIANTS[variant]['label']
-        for rate in RETENTION_RATES:
-            folds = results[variant][rate]
-            oas = [folds[f]['oa'] for f in folds]
-            maccs = [folds[f]['macc'] for f in folds]
-            oa_mean, oa_std = np.mean(oas), np.std(oas)
-            macc_mean, macc_std = np.mean(maccs), np.std(maccs)
-            row += f" & ${oa_mean:.1f} \\pm {oa_std:.1f}$ & ${macc_mean:.1f} \\pm {macc_std:.1f}$"
-        row += r" \\"
-        lines.append(row)
-    
-    lines.append(r"\bottomrule")
-    lines.append(r"\end{tabular}")
-    lines.append(r"\end{table*}")
-    
-    with open(tables_dir / 'exp2_oa_macc.tex', 'w') as f:
-        f.write("\n".join(lines))
-    
-    # Table 2: Per-class F1 at r=100% and r=5%
-    lines = []
-    lines.append(r"\begin{table*}[htbp]")
-    lines.append(r"\centering")
-    lines.append(r"\caption{Experiment 2: Per-Class F1 Scores at Full Density (r=100\%) and Extreme Sparsity (r=5\%)}")
-    lines.append(r"\label{tab:exp2_f1}")
-    lines.append(r"\scriptsize")
-    lines.append(r"\begin{tabular}{l" + "cc" * len(variant_names) + "}")
-    lines.append(r"\toprule")
-    
-    # Header
-    header = "Species"
-    for v in variant_names:
-        header += f" & \\multicolumn{{2}}{{c}}{{{VARIANTS[v]['label']}}}"
-    header += r" \\"
-    lines.append(header)
-    
-    # Sub-header
-    subheader = ""
-    for _ in variant_names:
-        subheader += " & 100\\% & 5\\%"
-    subheader += r" \\"
-    lines.append(subheader)
-    lines.append(r"\midrule")
-    
-    # Data rows
-    for i, class_name in enumerate(class_names):
-        row = class_name
-        for variant in variant_names:
-            f1_100 = np.mean([results[variant][1.0][f]['f1'][i] for f in results[variant][1.0]])
-            f1_5 = np.mean([results[variant][0.05][f]['f1'][i] for f in results[variant][0.05]])
-            row += f" & {f1_100:.3f} & {f1_5:.3f}"
-        row += r" \\"
-        lines.append(row)
-    
-    lines.append(r"\bottomrule")
-    lines.append(r"\end{tabular}")
-    lines.append(r"\end{table*}")
-    
-    with open(tables_dir / 'exp2_f1.tex', 'w') as f:
-        f.write("\n".join(lines))
-    
-    # Table 3: Delta OA (degradation from 100% to 5%)
-    lines = []
-    lines.append(r"\begin{table}[htbp]")
-    lines.append(r"\centering")
-    lines.append(r"\caption{Experiment 2: Accuracy Degradation ($\Delta$OA = OA(100\%) - OA(5\%))}")
-    lines.append(r"\label{tab:exp2_delta}")
-    lines.append(r"\begin{tabular}{lcc}")
-    lines.append(r"\toprule")
-    lines.append(r"Variant & $\Delta$OA (\%) & $\Delta$mAcc (\%) \\")
-    lines.append(r"\midrule")
-    
-    for variant in variant_names:
-        oa_100 = np.mean([results[variant][1.0][f]['oa'] for f in results[variant][1.0]])
-        oa_5 = np.mean([results[variant][0.05][f]['oa'] for f in results[variant][0.05]])
-        macc_100 = np.mean([results[variant][1.0][f]['macc'] for f in results[variant][1.0]])
-        macc_5 = np.mean([results[variant][0.05][f]['macc'] for f in results[variant][0.05]])
-        delta_oa = oa_100 - oa_5
-        delta_macc = macc_100 - macc_5
-        lines.append(f"{VARIANTS[variant]['label']} & {delta_oa:.2f} & {delta_macc:.2f} \\\\")
-    
-    lines.append(r"\bottomrule")
-    lines.append(r"\end{tabular}")
-    lines.append(r"\end{table}")
-    
-    with open(tables_dir / 'exp2_delta.tex', 'w') as f:
-        f.write("\n".join(lines))
-    
-    logger.info(f"LaTeX tables saved to {tables_dir}")
+def plot_degradation(results, k2_distances, rates, models, colors, path, log_x=False):
+    """OA (mean +- SD over folds) vs upper-canopy retention, with the mean k2-neighbor distance."""
+    from utils.robustness_plot import plot_robustness, fold_stats
+    plot_robustness(fold_stats(results, rates), path, 'Upper-canopy retention (%)',
+                    x=[r * 100 for r in rates], log_x=log_x,
+                    linear_ticks=(1, 2, 5, 10, 20, 50, 100) if log_x else (5, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100),
+                    right=dict(values=[k2_distances[r]['mean'] for r in rates],
+                               label=r'Mean $k_2$ distance (right axis)',
+                               ylabel=r'Mean $k_2$-neighbor distance'),
+                    legend_loc='lower right')
 
 
-def generate_visualizations(results, k2_distances, class_names, output_dir):
+def generate_visualizations(results, k2_distances, class_names, output_dir, rates, matched=None,
+                            min_retention=0.05):
     """Generate visualizations for Experiment 2."""
     
-    from plot_style import set_publication_style, get_variant_colors, add_panel_label, save_figure
+    from utils.plot_style import set_publication_style, get_variant_colors, add_panel_label, save_figure
     set_publication_style()
     
     figures_dir = output_dir / 'figures'
     figures_dir.mkdir(exist_ok=True)
-    tables_dir = output_dir / 'tables'
-    tables_dir.mkdir(exist_ok=True)
     
-    variant_names = list(VARIANTS.keys())
-    variant_labels = [VARIANTS[v]['label'] for v in variant_names]
-    colors = get_variant_colors(len(variant_names))
+    models = all_models()
+    variant_names = list(models.keys())
+    colors = get_variant_colors(len(VARIANTS)) + [BASELINE_COLORS[b] for b in BASELINES]
     
-    # 1. Degradation curves
-    fig, ax1 = plt.subplots(figsize=(12, 7))
-    
-    x_values = [r * 100 for r in RETENTION_RATES]
-    
-    for variant, color in zip(variant_names, colors):
-        oa_means = []
-        oa_stds = []
-        for rate in RETENTION_RATES:
-            folds = results[variant][rate]
-            oas = [folds[f]['oa'] for f in folds]
-            oa_means.append(np.mean(oas))
-            oa_stds.append(np.std(oas))
-        
-        ax1.plot(x_values, oa_means, 'o-', label=VARIANTS[variant]['label'], 
-                 color=color, linewidth=3.0, markersize=12)
-        ax1.fill_between(x_values, 
-                         np.array(oa_means) - np.array(oa_stds),
-                         np.array(oa_means) + np.array(oa_stds),
-                         alpha=0.2, color=color)
-    
-    ax1.set_xscale('log')
-    ax1.set_xlabel('Retention Rate (%)', fontsize=21, fontweight='bold')
-    ax1.set_ylabel('Overall Accuracy (%)', fontsize=21, fontweight='bold')
-    ax1.set_title('Accuracy vs. Upper Canopy Retention Rate', fontsize=24, fontweight='bold', pad=15)
-    ax1.legend(loc='lower right', fontsize=16, framealpha=0.9)
-    ax1.grid(True, alpha=0.4, linewidth=1.0)
-    ax1.set_xticks(x_values)
-    ax1.set_xticklabels([f'{int(x)}%' for x in x_values], fontsize=18, fontweight='bold')
-    ax1.tick_params(axis='y', labelsize=18)
-    ax1.spines['top'].set_visible(False)
-    
-    # Secondary y-axis for k2-distance
-    ax2 = ax1.twinx()
-    k2_means = [k2_distances[r]['mean'] for r in RETENTION_RATES]
-    ax2.plot(x_values, k2_means, 's--', color='#666666', label=r'Mean k$_2$-distance', 
-             alpha=0.7, linewidth=2.5, markersize=10)
-    ax2.set_ylabel(r'Mean k$_2$-neighbor distance', color='#666666', fontsize=21, fontweight='bold')
-    ax2.tick_params(axis='y', labelcolor='#666666', labelsize=18)
-    ax2.spines['top'].set_visible(False)
-    
-    plt.tight_layout()
-    save_figure(fig, figures_dir / 'degradation_curves')
-    plt.close()
-    
-    # 2. Per-class degradation table
-    table_data = []
-    for i, class_name in enumerate(class_names):
-        row = [class_name]
-        for variant in variant_names:
-            # F1 at 100%
-            f1_100 = np.mean([results[variant][1.0][f]['f1'][i] for f in results[variant][1.0]])
-            # F1 at 5%
-            f1_5 = np.mean([results[variant][0.05][f]['f1'][i] for f in results[variant][0.05]])
-            row.extend([f'{f1_100:.3f}', f'{f1_5:.3f}'])
-        table_data.append(row)
-    
-    columns = ['Species'] + [f'{VARIANTS[v]["label"]} r=100%' for v in variant_names] + \
-              [f'{VARIANTS[v]["label"]} r=5%' for v in variant_names]
-    # Reorder columns
-    columns = ['Species']
-    for v in variant_names:
-        columns.extend([f'{VARIANTS[v]["label"]} 100%', f'{VARIANTS[v]["label"]} 5%'])
-    
-    # Rebuild table data with correct column order
-    table_data = []
-    for i, class_name in enumerate(class_names):
-        row = [class_name]
-        for variant in variant_names:
-            f1_100 = np.mean([results[variant][1.0][f]['f1'][i] for f in results[variant][1.0]])
-            f1_5 = np.mean([results[variant][0.05][f]['f1'][i] for f in results[variant][0.05]])
-            row.extend([f'{f1_100:.3f}', f'{f1_5:.3f}'])
-        table_data.append(row)
-    
-    df = pd.DataFrame(table_data, columns=columns)
-    df.to_csv(tables_dir / 'per_class_degradation.csv', index=False)
-    
-    # Generate LaTeX tables
-    generate_latex_tables(results, class_names, tables_dir)
-    
-    # 3. Delta-Accuracy bar chart
-    fig, ax = plt.subplots(figsize=(10, 6))
-    
-    delta_oas = []
-    for variant in variant_names:
-        oa_100 = np.mean([results[variant][1.0][f]['oa'] for f in results[variant][1.0]])
-        oa_5 = np.mean([results[variant][0.05][f]['oa'] for f in results[variant][0.05]])
-        delta_oas.append(oa_100 - oa_5)
-    
-    x = np.arange(len(variant_names))
-    bars = ax.bar(x, delta_oas, color=colors, edgecolor='#333333', linewidth=2.0)
-    
-    ax.set_xlabel('Variant', fontsize=21, fontweight='bold')
-    ax.set_ylabel(r'$\Delta$OA = OA(100%) - OA(5%)', fontsize=21, fontweight='bold')
-    ax.set_title(r'Accuracy Degradation: 100% $\rightarrow$ 5% Retention', fontsize=24, fontweight='bold', pad=15)
-    ax.set_xticks(x)
-    ax.set_xticklabels(variant_labels, rotation=15, ha='right', fontsize=18, fontweight='bold')
-    ax.tick_params(axis='y', labelsize=18)
-    ax.grid(axis='y', alpha=0.4, linewidth=1.0)
-    ax.set_axisbelow(True)
-    ax.spines['top'].set_visible(False)
-    ax.spines['right'].set_visible(False)
-    
-    for bar, delta in zip(bars, delta_oas):
-        ax.text(bar.get_x() + bar.get_width()/2, bar.get_height() + 0.3,
-                f'{delta:.1f}%', ha='center', va='bottom', fontsize=16, fontweight='bold')
-    
-    plt.tight_layout()
-    save_figure(fig, figures_dir / 'delta_accuracy')
-    plt.close()
-    
-    logger.info(f"Visualizations saved to {figures_dir}")
+    # 1. Degradation curves: main figure (>= min_retention, linear axis) + all levels (log axis)
+    shown = [r for r in rates if r >= min_retention]
+    plot_degradation(results, k2_distances, shown, models, colors, figures_dir / 'degradation_curves', log_x=False)
+    if len(shown) < len(rates):
+        plot_degradation(results, k2_distances, rates, models, colors,
+                         figures_dir / 'degradation_curves_all_levels', log_x=True)
 
+    # Numbers behind Figure 4 (OA and mAcc), one row per retention rate
+    from utils.latex_tables import level_table
+    labels = {m: models[m]['label'] for m in models}
+    for metric, name in [('oa', 'OA'), ('macc', 'mAcc')]:
+        level_table(results, labels, rates, 'Retention', lambda r: f'{r*100:g}\\%',
+                    f'Upper-canopy density dropout: models trained on clean data, tested at retention $r$. '
+                    f'{name} (\\%), mean $\\pm$ standard deviation across five folds (ddof=0). Bold: best mean per row.',
+                    f'tab:density_{metric}', output_dir / 'tables' / f'density_{metric}.tex', metric=metric)
+
+    # Supplement: clean-trained vs matched-trained OA at the matched retention rates
+    if matched:
+        rows = []
+        for variant, by_rate in matched.items():
+            for rate, folds in by_rate.items():
+                clean_oa = [results[variant][rate][f]['oa'] for f in sorted(results[variant][rate])] \
+                    if rate in results[variant] else []
+                matched_oa = [folds[f]['oa'] for f in sorted(folds)]
+                rows.append({'variant': VARIANTS[variant]['label'], 'retention': rate,
+                             'clean_train_oa_mean': float(np.mean(clean_oa)) if clean_oa else None,
+                             'clean_train_oa_std': float(np.std(clean_oa)) if clean_oa else None,
+                             'matched_train_oa_mean': float(np.mean(matched_oa)),
+                             'matched_train_oa_std': float(np.std(matched_oa))})
+        tables_dir = output_dir / 'tables'
+        tables_dir.mkdir(exist_ok=True)
+        pd.DataFrame(rows).to_csv(tables_dir / 'matched_vs_clean_training.csv', index=False)
+        from utils.latex_tables import matched_table
+        matched_table(rows, tables_dir / 'matched_vs_clean_training.tex')
+        logger.info('Matched-training comparison saved to %s', tables_dir / 'matched_vs_clean_training.csv')
+    
 
 def main():
     parser = argparse.ArgumentParser(description='Experiment 2: Controlled Density Dropout')
     parser.add_argument('--data_path', type=str, default='data/STPCTLC')
-    parser.add_argument('--output_dir', type=str, default='results')
+    parser.add_argument('--output_dir', type=str, default='results/paper_v2')
     parser.add_argument('--resume_dir', type=str, default=None,
                         help='Path to existing experiment directory to resume/regenerate')
     parser.add_argument('--k_folds', type=int, default=5)
@@ -535,10 +239,20 @@ def main():
     parser.add_argument('--lr', type=float, default=0.0005)
     parser.add_argument('--weight_decay', type=float, default=0.0001)
     parser.add_argument('--num_points', type=int, default=1024)
-    parser.add_argument('--patience', type=int, default=20)
+    parser.add_argument('--patience', type=int, default=0)
     parser.add_argument('--seed', type=int, default=42)
+    parser.add_argument('--retention_rates', type=float, nargs='+', default=RETENTION_RATES,
+                        help='Test-time upper-canopy retention rates (clean-trained models)')
+    parser.add_argument('--figure_min_retention', type=float, default=0.05,
+                        help='Lowest retention drawn in the main figure (all levels stay in the tables '
+                             'and in degradation_curves_all_levels)')
+    parser.add_argument('--matched_retentions', type=float, nargs='*', default=[0.05],
+                        help='Retention rates for the matched-training supplement (empty to skip)')
+    parser.add_argument('--matched_variants', nargs='*', default=['hybrid_everywhere', 'default'],
+                        choices=list(VARIANTS), help='Variants for the matched-training supplement')
     
-    args = parser.parse_args()
+    add_common_arguments(parser)
+    args = prepare_args(parser.parse_args())
     
     if not os.path.isabs(args.data_path):
         args.data_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), args.data_path)

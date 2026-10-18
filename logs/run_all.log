@@ -1,0 +1,16 @@
+[2026-10-10 16:15:25] === START (python: /home/said/miniconda3/envs/torch311/bin/python, GPU: NVIDIA RTX A4500) ===
+[2026-10-10 16:15:25] --- running: experiment1_ablation.py  (log: logs/experiment1_ablation.log)
+[2026-10-10 16:24:21] === START (python: /home/said/miniconda3/envs/torch311/bin/python, GPU: NVIDIA RTX A4500) ===
+[2026-10-10 16:24:21] --- [1/6] running: experiment1_ablation.py  (full log: logs/experiment1_ablation.log)
+[2026-10-10 19:42:40] --- [1/6] done: experiment1_ablation.py in 198 min
+[2026-10-10 19:42:40] --- [2/6] running: experiment2_density_dropout.py  (full log: logs/experiment2_density_dropout.log)
+[2026-10-11 00:01:41] --- [2/6] done: experiment2_density_dropout.py in 259 min
+[2026-10-11 00:01:41] --- [3/6] running: experiment3_noise_sweep.py  (full log: logs/experiment3_noise_sweep.log)
+[2026-10-11 00:07:38] --- [3/6] done: experiment3_noise_sweep.py in 5 min
+[2026-10-11 00:07:38] --- [4/6] running: run_ablations.py  (full log: logs/run_ablations.log)
+[2026-10-11 08:03:00] --- [4/6] done: run_ablations.py in 475 min
+[2026-10-11 08:03:00] --- [5/6] running: run_ablations.py --outliers  (full log: logs/run_ablations_outliers.log)
+[2026-10-11 08:09:40] --- [5/6] done: run_ablations.py --outliers in 6 min
+[2026-10-11 08:09:40] --- [6/6] running: run_kscale_ablation.py  (full log: logs/run_kscale_ablation.log)
+[2026-10-11 23:17:07] --- [6/6] done: run_kscale_ablation.py in 907 min
+[2026-10-11 23:17:07] === ALL DONE in 30 h 52 min ===
