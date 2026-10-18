@@ -107,18 +107,3 @@ Use `--help` on individual Python scripts for epochs, batch size, folds, and out
 
 Artifacts land under `results/` or `--output_dir`: configs, metrics JSON, LaTeX tables, and figures aligned with the paper’s supplementary material workflow.
 
-## Citation
-
-Please cite the arXiv preprint. When you use the unified benchmarking stack, cite **[LIDARLearn](https://github.com/said-ohamouddou/LIDARLearn)** as indicated there.
-
-```bibtex
-@misc{ohamouddou2025msdgcnnpp,
-  title         = {{MS-DGCNN++}: Multi-Scale Dynamic Graph Convolution with Scale-Dependent Normalization for Robust {LiDAR} Tree Species Classification},
-  author        = {Ohamouddou, Said and El Afia, Hanaa and Boulaich, Mohamed Hamza and El Afia, Abdellatif and Chiheb, Raddouane},
-  year          = {2025},
-  eprint        = {2507.12602},
-  archivePrefix = {arXiv},
-  primaryClass  = {cs.CV},
-  url           = {https://arxiv.org/abs/2507.12602}
-}
-```
