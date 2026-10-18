@@ -10,7 +10,7 @@
 
 This repository contains the **ablation and robustness experiments** on **STPCTLS** (5-fold cross-validation): per-scale encoding, upper-canopy density dropout, Gaussian noise, outliers, component ablations and *k*-scale sensitivity, together with the scripts that produce the paper's tables and figures.
 
-The **large-scale state-of-the-art comparisons** on STPCTLS and HeliALS were run with **[LIDARLearn](https://github.com/said-ohamouddou/LIDARLearn)**, which integrates MS-DGCNN++ with shared preprocessing, configs and training scripts. Start there for dataset preprocessing and for replicating the benchmark tables.
+The **large-scale state-of-the-art comparisons** on STPCTLS and HeliALS were run with **[LIDARLearn](https://github.com/said-ohamouddou/LIDARLearn)**.
 
 ## Experiments ↔ scripts
 
