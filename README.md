@@ -2,10 +2,6 @@
 
 **MS-DGCNN++: Multi-Scale Dynamic Graph Convolution with Scale-Dependent Normalization for Robust LiDAR Tree Species Classification**
 
-| Resource | Link |
-|----------|------|
-| Unified 3D library (large benchmarks & preprocessing) | [github.com/said-ohamouddou/LIDARLearn](https://github.com/said-ohamouddou/LIDARLearn) |
-
 ---
 
 ## What this repository is for
